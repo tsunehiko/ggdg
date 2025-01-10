@@ -1,0 +1,32 @@
+{
+    "board/sow/two_rows/Wore.lud": [
+        "board/sow/two_rows/Wari.lud",
+        "board/sow/two_rows/Vai Lung Thlan.lud",
+        "board/sow/two_rows/Mankala.lud"
+    ],
+    "board/sow/two_rows/Waurie.lud": [
+        "board/sow/two_rows/Mangala (Turkey).lud",
+        "board/sow/two_rows/Wari.lud",
+        "board/sow/two_rows/Vai Lung Thlan.lud"
+    ],
+    "board/sow/two_rows/Mangala (Turkey).lud": [
+        "board/sow/two_rows/Vai Lung Thlan.lud",
+        "board/sow/two_rows/Waurie.lud",
+        "board/sow/two_rows/Wari.lud"
+    ],
+    "board/sow/two_rows/Vai Lung Thlan.lud": [
+        "board/sow/two_rows/Mankala.lud",
+        "board/sow/two_rows/Wari.lud",
+        "board/sow/two_rows/Mangala (Turkey).lud"
+    ],
+    "board/sow/two_rows/Wari.lud": [
+        "board/sow/two_rows/Vai Lung Thlan.lud",
+        "board/sow/two_rows/Waurie.lud",
+        "board/sow/two_rows/Mangala (Turkey).lud"
+    ],
+    "board/sow/two_rows/Mankala.lud": [
+        "board/sow/two_rows/Mangala (Turkey).lud",
+        "board/sow/two_rows/Vai Lung Thlan.lud",
+        "board/sow/two_rows/Waurie.lud"
+    ]
+}

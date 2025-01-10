@@ -1,0 +1,92 @@
+{
+    "puzzle/deduction/Takuzu.lud": [
+        "puzzle/deduction/Futoshiki.lud",
+        "puzzle/deduction/Latin Square.lud",
+        "puzzle/deduction/Sudoku X.lud"
+    ],
+    "puzzle/deduction/Magic Hexagon.lud": [
+        "puzzle/deduction/Sudoku.lud",
+        "puzzle/deduction/Sudoku Mine.lud",
+        "puzzle/deduction/Futoshiki.lud"
+    ],
+    "puzzle/deduction/Sudoku X.lud": [
+        "puzzle/deduction/N Queens.lud",
+        "puzzle/deduction/Futoshiki.lud",
+        "puzzle/deduction/Magic Square.lud"
+    ],
+    "puzzle/deduction/N Queens.lud": [
+        "puzzle/deduction/Sudoku Mine.lud",
+        "puzzle/deduction/Sudoku.lud",
+        "puzzle/deduction/Magic Hexagon.lud"
+    ],
+    "puzzle/deduction/Magic Square.lud": [
+        "puzzle/deduction/Takuzu.lud",
+        "puzzle/deduction/N Queens.lud",
+        "puzzle/deduction/Magic Hexagon.lud"
+    ],
+    "puzzle/deduction/Sudoku.lud": [
+        "puzzle/deduction/Magic Square.lud",
+        "puzzle/deduction/Takuzu.lud",
+        "puzzle/deduction/Sudoku X.lud"
+    ],
+    "puzzle/deduction/Futoshiki.lud": [
+        "puzzle/deduction/N Queens.lud",
+        "puzzle/deduction/Sudoku Mine.lud",
+        "puzzle/deduction/Latin Square.lud"
+    ],
+    "puzzle/deduction/Sudoku Mine.lud": [
+        "puzzle/deduction/Latin Square.lud",
+        "puzzle/deduction/Magic Hexagon.lud",
+        "puzzle/deduction/Sudoku.lud"
+    ],
+    "puzzle/deduction/Latin Square.lud": [
+        "puzzle/deduction/N Queens.lud",
+        "puzzle/deduction/Futoshiki.lud",
+        "puzzle/deduction/Sudoku.lud"
+    ],
+    "puzzle/planning/Jiu Zi Xian Qi.lud": [
+        "puzzle/planning/Buttons And Lights.lud",
+        "puzzle/planning/N Puzzles.lud",
+        "puzzle/planning/Chuka.lud"
+    ],
+    "puzzle/planning/Buttons And Lights.lud": [
+        "puzzle/planning/Tower of Hanoi.lud",
+        "puzzle/planning/Insanity.lud",
+        "puzzle/planning/Lights Out.lud"
+    ],
+    "puzzle/planning/Tower of Hanoi.lud": [
+        "puzzle/planning/Buttons And Lights.lud",
+        "puzzle/planning/Insanity.lud",
+        "puzzle/planning/Peg Solitaire.lud"
+    ],
+    "puzzle/planning/Lights Out.lud": [
+        "puzzle/planning/Chuka.lud",
+        "puzzle/planning/Tower of Hanoi.lud",
+        "puzzle/planning/Buttons And Lights.lud"
+    ],
+    "puzzle/planning/Knight's Tour.lud": [
+        "puzzle/planning/Chuka.lud",
+        "puzzle/planning/Jiu Zi Xian Qi.lud",
+        "puzzle/planning/N Puzzles.lud"
+    ],
+    "puzzle/planning/Insanity.lud": [
+        "puzzle/planning/Chuka.lud",
+        "puzzle/planning/Tower of Hanoi.lud",
+        "puzzle/planning/N Puzzles.lud"
+    ],
+    "puzzle/planning/Peg Solitaire.lud": [
+        "puzzle/planning/Lights Out.lud",
+        "puzzle/planning/Tower of Hanoi.lud",
+        "puzzle/planning/Jiu Zi Xian Qi.lud"
+    ],
+    "puzzle/planning/Chuka.lud": [
+        "puzzle/planning/Lights Out.lud",
+        "puzzle/planning/Jiu Zi Xian Qi.lud",
+        "puzzle/planning/Knight's Tour.lud"
+    ],
+    "puzzle/planning/N Puzzles.lud": [
+        "puzzle/planning/Lights Out.lud",
+        "puzzle/planning/Chuka.lud",
+        "puzzle/planning/Knight's Tour.lud"
+    ]
+}

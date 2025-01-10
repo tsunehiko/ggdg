@@ -1,0 +1,12 @@
+{
+    "ruleset": "",
+    "numTrials": 10,
+    "gameLengthCap": 50,
+    "thinkingTime": 0.25,
+    "iterationLimit": 10000,
+    "warmingUpSecs": 5,
+    "outputSummary": true,
+    "outputAlphaRankData": true,
+    "outputRawResults": true,
+    "treatGameNameAsFilepath": true
+}

@@ -1,0 +1,10 @@
+reconstruction/done/board/war/leaping/lines/Aiyawatstani.lud
+board/space/connection/Gale.lud
+reconstruction/done/board/war/leaping/lines/Lu Qi.lud
+board/space/line/Marelle Triple.lud
+puzzle/deduction/Latin Square.lud
+reconstruction/done/board/sow/two_rows/Mandinka Game.lud
+board/space/line/Tic-Tac-Toe.lud
+board/sow/two_rows/Um el-Bil.lud
+board/race/reach/Knightthrough.lud
+board/space/line/Engijn Zirge.lud

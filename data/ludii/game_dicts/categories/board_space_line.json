@@ -1,0 +1,337 @@
+{
+    "board/space/line/Alquerque de Tres.lud": [
+        "board/space/line/Teeko.lud",
+        "board/space/line/Tic-Tac-Four.lud",
+        "board/space/line/Fivalath.lud"
+    ],
+    "board/space/line/Tsoro Yemutatu (Triangle).lud": [
+        "board/space/line/Broken Line.lud",
+        "board/space/line/Fanorona Telo.lud",
+        "board/space/line/Connect6.lud"
+    ],
+    "board/space/line/Connect6.lud": [
+        "board/space/line/Yavalanchor.lud",
+        "board/space/line/Engijn Zirge.lud",
+        "board/space/line/Epelle.lud"
+    ],
+    "board/space/line/A Simple Game.lud": [
+        "board/space/line/Agilidade.lud",
+        "board/space/line/Connect Four.lud",
+        "board/space/line/Fivalath.lud"
+    ],
+    "board/space/line/Squava.lud": [
+        "board/space/line/Yavalath.lud",
+        "board/space/line/Driesticken.lud",
+        "board/space/line/Nzengue (Small).lud"
+    ],
+    "board/space/line/Liu Tsi.lud": [
+        "board/space/line/Connect Four.lud",
+        "board/space/line/Engijn Zirge.lud",
+        "board/space/line/Pentalath.lud"
+    ],
+    "board/space/line/Bolotudu.lud": [
+        "board/space/line/Tsoro Yemutatu (Triangle).lud",
+        "board/space/line/All Queens Chess.lud",
+        "board/space/line/Tsoro Yemutatu.lud"
+    ],
+    "board/space/line/Nine Holes.lud": [
+        "board/space/line/Round Merels.lud",
+        "board/space/line/Andantino.lud",
+        "board/space/line/Pentalath.lud"
+    ],
+    "board/space/line/Selbia.lud": [
+        "board/space/line/Fivalath.lud",
+        "board/space/line/Andantino.lud",
+        "board/space/line/San-Noku-Narabe.lud"
+    ],
+    "board/space/line/Wure Dune.lud": [
+        "board/space/line/Epelle.lud",
+        "board/space/line/Marelle Quadruple.lud",
+        "board/space/line/Pentalath.lud"
+    ],
+    "board/space/line/Pentalath.lud": [
+        "board/space/line/Shisima.lud",
+        "board/space/line/Tsoro Yemutatu.lud",
+        "board/space/line/Roll-Ing to Four.lud"
+    ],
+    "board/space/line/Akidada.lud": [
+        "board/space/line/Wure Dune.lud",
+        "board/space/line/Bravalath.lud",
+        "board/space/line/Picaria.lud"
+    ],
+    "board/space/line/Pente.lud": [
+        "board/space/line/Wure Dune.lud",
+        "board/space/line/All Queens Chess.lud",
+        "board/space/line/Katsela.lud"
+    ],
+    "board/space/line/Epelle.lud": [
+        "board/space/line/Nine Holes.lud",
+        "board/space/line/Squava.lud",
+        "board/space/line/Roll-Ing to Four.lud"
+    ],
+    "board/space/line/Three Men's Morris.lud": [
+        "board/space/line/Akidada.lud",
+        "board/space/line/Tic-Tac-Four.lud",
+        "board/space/line/Traffic Lights.lud"
+    ],
+    "board/space/line/Engijn Zirge.lud": [
+        "board/space/line/Score Four.lud",
+        "board/space/line/Tsoro Yemutatu.lud",
+        "board/space/line/Teeko.lud"
+    ],
+    "board/space/line/Tic-Tac-Four.lud": [
+        "board/space/line/Unfair.lud",
+        "board/space/line/Roll-Ing to Four.lud",
+        "board/space/line/Tsoro Yemutatu (Triangle).lud"
+    ],
+    "board/space/line/Nzengue (Small).lud": [
+        "board/space/line/Tic-Tac-Toe.lud",
+        "board/space/line/Tuk Tak.lud",
+        "board/space/line/A Simple Game.lud"
+    ],
+    "board/space/line/Spline.lud": [
+        "board/space/line/Djara-Badakh.lud",
+        "board/space/line/Roll-Ing to Four.lud",
+        "board/space/line/Wure Dune.lud"
+    ],
+    "board/space/line/Les Pendus.lud": [
+        "board/space/line/Selbia.lud",
+        "board/space/line/Tsoro Yemutatu.lud",
+        "board/space/line/Yavalade.lud"
+    ],
+    "board/space/line/Picaria.lud": [
+        "board/space/line/A Simple Game.lud",
+        "board/space/line/Driesticken.lud",
+        "board/space/line/Wari (Alignment).lud"
+    ],
+    "board/space/line/Tic-Tac-Toe.lud": [
+        "board/space/line/Spline.lud",
+        "board/space/line/Wari (Alignment).lud",
+        "board/space/line/Dra.lud"
+    ],
+    "board/space/line/Driesticken.lud": [
+        "board/space/line/Tuk Tak.lud",
+        "board/space/line/Bolotudu.lud",
+        "board/space/line/Broken Line.lud"
+    ],
+    "board/space/line/Fivalath.lud": [
+        "board/space/line/Driesticken.lud",
+        "board/space/line/Niranchy.lud",
+        "board/space/line/Unfair.lud"
+    ],
+    "board/space/line/Shisima.lud": [
+        "board/space/line/Spava.lud",
+        "board/space/line/Nine Holes.lud",
+        "board/space/line/Dris at-Talata.lud"
+    ],
+    "board/space/line/Ngrin.lud": [
+        "board/space/line/Andantino.lud",
+        "board/space/line/Teeko.lud",
+        "board/space/line/Tic-Tac-Four.lud"
+    ],
+    "board/space/line/All Queens Chess.lud": [
+        "board/space/line/Nzengue (Small).lud",
+        "board/space/line/Tic-Tac-Toe.lud",
+        "board/space/line/3D Tic-Tac-Toe.lud"
+    ],
+    "board/space/line/Sujjua.lud": [
+        "board/space/line/Mbenga Alignment Game.lud",
+        "board/space/line/San-Noku-Narabe.lud",
+        "board/space/line/Nine Holes.lud"
+    ],
+    "board/space/line/Spava.lud": [
+        "board/space/line/Alquerque de Tres.lud",
+        "board/space/line/T'mbl.lud",
+        "board/space/line/Fanorona Telo.lud"
+    ],
+    "board/space/line/T'mbl.lud": [
+        "board/space/line/Spava.lud",
+        "board/space/line/Shisima.lud",
+        "board/space/line/Liu Tsi.lud"
+    ],
+    "board/space/line/Tsoro Yemutatu.lud": [
+        "board/space/line/Connect Four.lud",
+        "board/space/line/Bravalath.lud",
+        "board/space/line/Shisima.lud"
+    ],
+    "board/space/line/Fart (7x7).lud": [
+        "board/space/line/Tic-Tac-Four.lud",
+        "board/space/line/Teeko.lud",
+        "board/space/line/Connect6.lud"
+    ],
+    "board/space/line/Score Four.lud": [
+        "board/space/line/Tic-Tac-Die.lud",
+        "board/space/line/Liu Tsi.lud",
+        "board/space/line/Andantino.lud"
+    ],
+    "board/space/line/Tic-Tac-Toe Misere.lud": [
+        "board/space/line/Djara-Badakh.lud",
+        "board/space/line/Picaria.lud",
+        "board/space/line/Marelle Quadruple.lud"
+    ],
+    "board/space/line/Agilidade.lud": [
+        "board/space/line/Tsoro Yemutatu.lud",
+        "board/space/line/Nine Holes.lud",
+        "board/space/line/Traffic Lights.lud"
+    ],
+    "board/space/line/San-Noku-Narabe.lud": [
+        "board/space/line/All Queens Chess.lud",
+        "board/space/line/Agilidade.lud",
+        "board/space/line/Tic-Tac-Toe.lud"
+    ],
+    "board/space/line/Bravalath.lud": [
+        "board/space/line/Spava.lud",
+        "board/space/line/Bolotudu.lud",
+        "board/space/line/Roll-Ing to Four.lud"
+    ],
+    "board/space/line/Katsela.lud": [
+        "board/space/line/Tapatan.lud",
+        "board/space/line/Nine Holes.lud",
+        "board/space/line/Yavalath.lud"
+    ],
+    "board/space/line/Teeko.lud": [
+        "board/space/line/Yavalath.lud",
+        "board/space/line/Tsoro Yemutatu (Triangle).lud",
+        "board/space/line/Engijn Zirge.lud"
+    ],
+    "board/space/line/Ngre E E.lud": [
+        "board/space/line/Spava.lud",
+        "board/space/line/Mbenga Alignment Game.lud",
+        "board/space/line/Sujjua.lud"
+    ],
+    "board/space/line/Tic-Tac-Die.lud": [
+        "board/space/line/Yavalath.lud",
+        "board/space/line/Roll-Ing to Four.lud",
+        "board/space/line/Tic-Tac-Four.lud"
+    ],
+    "board/space/line/Unfair.lud": [
+        "board/space/line/Spava.lud",
+        "board/space/line/3D Tic-Tac-Toe.lud",
+        "board/space/line/Fart (5x5).lud"
+    ],
+    "board/space/line/Tuk Tak.lud": [
+        "board/space/line/Wure Dune.lud",
+        "board/space/line/Three Men's Morris.lud",
+        "board/space/line/Mbenga Alignment Game.lud"
+    ],
+    "board/space/line/Broken Line.lud": [
+        "board/space/line/San-Noku-Narabe.lud",
+        "board/space/line/Order and Chaos.lud",
+        "board/space/line/Engijn Zirge.lud"
+    ],
+    "board/space/line/Fanorona Telo.lud": [
+        "board/space/line/Tic-Tac-Four.lud",
+        "board/space/line/Pente.lud",
+        "board/space/line/Gomoku.lud"
+    ],
+    "board/space/line/Connect Four.lud": [
+        "board/space/line/Traffic Lights.lud",
+        "board/space/line/Yavalanchor.lud",
+        "board/space/line/Driesticken.lud"
+    ],
+    "board/space/line/Gomoku.lud": [
+        "board/space/line/Picaria.lud",
+        "board/space/line/Marelle Quadruple.lud",
+        "board/space/line/Roll-Ing to Four.lud"
+    ],
+    "board/space/line/Andantino.lud": [
+        "board/space/line/Picaria.lud",
+        "board/space/line/Shisima.lud",
+        "board/space/line/Tic-Tac-Toe.lud"
+    ],
+    "board/space/line/Tic-Tac-Mo.lud": [
+        "board/space/line/Marelle Quadruple.lud",
+        "board/space/line/Selbia.lud",
+        "board/space/line/Tsoro Yemutatu.lud"
+    ],
+    "board/space/line/Wari (Alignment).lud": [
+        "board/space/line/Niranchy.lud",
+        "board/space/line/Bolotudu.lud",
+        "board/space/line/Yavalath.lud"
+    ],
+    "board/space/line/Djara-Badakh.lud": [
+        "board/space/line/Liu Tsi.lud",
+        "board/space/line/Bravalath.lud",
+        "board/space/line/Agilidade.lud"
+    ],
+    "board/space/line/Niranchy.lud": [
+        "board/space/line/Tic-Tac-Toe Misere.lud",
+        "board/space/line/Connect Four.lud",
+        "board/space/line/A Simple Game.lud"
+    ],
+    "board/space/line/Tant Fant.lud": [
+        "board/space/line/Tic-Tac-Toe.lud",
+        "board/space/line/Teeko.lud",
+        "board/space/line/Sujjua.lud"
+    ],
+    "board/space/line/Dra.lud": [
+        "board/space/line/Sujjua.lud",
+        "board/space/line/Tsoro Yemutatu.lud",
+        "board/space/line/Liu Tsi.lud"
+    ],
+    "board/space/line/Tapatan.lud": [
+        "board/space/line/Ngrin.lud",
+        "board/space/line/Tic-Tac-Toe Misere.lud",
+        "board/space/line/Dra.lud"
+    ],
+    "board/space/line/3D Tic-Tac-Toe.lud": [
+        "board/space/line/Tic-Tac-Toe Misere.lud",
+        "board/space/line/Bravalath.lud",
+        "board/space/line/Niranchy.lud"
+    ],
+    "board/space/line/Traffic Lights.lud": [
+        "board/space/line/Yavalade.lud",
+        "board/space/line/Order and Chaos.lud",
+        "board/space/line/Tsoro Yemutatu (Triangle).lud"
+    ],
+    "board/space/line/Yavalanchor.lud": [
+        "board/space/line/Engijn Zirge.lud",
+        "board/space/line/Marelle Quadruple.lud",
+        "board/space/line/Fart (5x5).lud"
+    ],
+    "board/space/line/Marelle Quadruple.lud": [
+        "board/space/line/Nine Holes.lud",
+        "board/space/line/Bolotudu.lud",
+        "board/space/line/Agilidade.lud"
+    ],
+    "board/space/line/Fart (5x5).lud": [
+        "board/space/line/Pentalath.lud",
+        "board/space/line/Tic-Tac-Toe Misere.lud",
+        "board/space/line/San-Noku-Narabe.lud"
+    ],
+    "board/space/line/Yavalade.lud": [
+        "board/space/line/Tsoro Yemutatu (Triangle).lud",
+        "board/space/line/Three Men's Morris.lud",
+        "board/space/line/Dris at-Talata.lud"
+    ],
+    "board/space/line/Dris at-Talata.lud": [
+        "board/space/line/Order and Chaos.lud",
+        "board/space/line/Roll-Ing to Four.lud",
+        "board/space/line/Bolotudu.lud"
+    ],
+    "board/space/line/Round Merels.lud": [
+        "board/space/line/Wure Dune.lud",
+        "board/space/line/Katsela.lud",
+        "board/space/line/Sujjua.lud"
+    ],
+    "board/space/line/Yavalath.lud": [
+        "board/space/line/Bravalath.lud",
+        "board/space/line/Bolotudu.lud",
+        "board/space/line/Broken Line.lud"
+    ],
+    "board/space/line/Roll-Ing to Four.lud": [
+        "board/space/line/Spline.lud",
+        "board/space/line/Katsela.lud",
+        "board/space/line/Nine Holes.lud"
+    ],
+    "board/space/line/Mbenga Alignment Game.lud": [
+        "board/space/line/Three Men's Morris.lud",
+        "board/space/line/Ngre E E.lud",
+        "board/space/line/Yavalade.lud"
+    ],
+    "board/space/line/Order and Chaos.lud": [
+        "board/space/line/All Queens Chess.lud",
+        "board/space/line/Wari (Alignment).lud",
+        "board/space/line/Akidada.lud"
+    ]
+}

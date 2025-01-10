@@ -1,0 +1,502 @@
+{
+    "puzzle/planning/Pentalpha.lud": [
+        "puzzle/planning/Lam Turki.lud",
+        "puzzle/planning/Nao Gutiya Baithaneka.lud",
+        "puzzle/planning/Monty Hall Problem.lud"
+    ],
+    "puzzle/planning/Lam Turki.lud": [
+        "puzzle/planning/Monty Hall Problem.lud",
+        "puzzle/planning/Pentalpha.lud",
+        "puzzle/planning/Nao Gutiya Baithaneka.lud"
+    ],
+    "puzzle/deduction/Slitherlink.lud": [
+        "puzzle/deduction/Killer Sudoku.lud",
+        "puzzle/deduction/Squaro.lud",
+        "puzzle/deduction/Anti-Knight Sudoku.lud"
+    ],
+    "board/space/line/Achi.lud": [
+        "board/space/line/Trianon.lud",
+        "board/space/line/Altan Xaraacaj.lud",
+        "board/space/line/Notakto.lud"
+    ],
+    "board/space/line/Symbol S.2.lud": [
+        "board/space/line/Yavalax.lud",
+        "board/space/line/Mulabalaba.lud",
+        "board/space/line/Marelle Triple.lud"
+    ],
+    "board/sow/two_rows/Boukerourou.lud": [
+        "board/sow/two_rows/Enindji.lud",
+        "board/sow/two_rows/Kpo.lud",
+        "board/sow/two_rows/Uril.lud"
+    ],
+    "board/space/territory/Patok.lud": [
+        "board/space/territory/Lotus.lud",
+        "board/space/territory/Rolit.lud",
+        "board/space/territory/Verge.lud"
+    ],
+    "board/hunt/Demala Diviyan Keliya.lud": [
+        "board/hunt/Main Tapak Empat.lud",
+        "board/hunt/Bouge Shodra.lud",
+        "board/hunt/Gasetavl.lud"
+    ],
+    "board/sow/two_rows/Halusa.lud": [
+        "board/sow/two_rows/Pachgarhwa.lud",
+        "board/sow/two_rows/Das Bohnenspiel.lud",
+        "board/sow/two_rows/Chonka.lud"
+    ],
+    "board/hunt/El Zorro.lud": [
+        "board/hunt/Jeu de Renard.lud",
+        "board/hunt/Jeu du Renard et de la Poule.lud",
+        "board/hunt/Hund efter Hare (Vendsyssel).lud"
+    ],
+    "reconstruction/done/board/war/other/Ludus Rebellionis (Asymmetric).lud": [
+        "reconstruction/done/board/war/other/Cumisitha.lud",
+        "reconstruction/done/board/war/other/Eleven-Fang.lud",
+        "reconstruction/done/board/war/other/Selayar Game.lud"
+    ],
+    "board/hunt/Fox and Geese.lud": [
+        "board/hunt/Gasetavl (Gedved).lud",
+        "board/hunt/La Liebre Perseguida.lud",
+        "board/hunt/Jeu du Renard et de la Poule.lud"
+    ],
+    "board/sow/two_rows/Kay.lud": [
+        "board/sow/two_rows/Um el-Bil.lud",
+        "board/sow/two_rows/Ntyenge.lud",
+        "board/sow/two_rows/Das Bohnenspiel.lud"
+    ],
+    "experimental/Greater.lud": [
+        "experimental/Greatest Loss.lud",
+        "experimental/Goldilocks Stones.lud",
+        "experimental/Conflagration and Keep-a-riding.lud"
+    ],
+    "board/war/leaping/lines/Padaivettu.lud": [
+        "board/war/leaping/lines/Ram Tir.lud",
+        "board/war/leaping/lines/Gol Ekuish.lud",
+        "board/war/leaping/lines/Crand.lud"
+    ],
+    "reconstruction/done/board/hunt/Talyn Buga.lud": [
+        "reconstruction/done/board/hunt/Raquithue.lud",
+        "reconstruction/done/board/hunt/Comina.lud",
+        "reconstruction/done/board/hunt/Solitario.lud"
+    ],
+    "board/space/blocking/Claustro.lud": [
+        "board/space/blocking/Quantum Leap.lud",
+        "board/space/blocking/Ho-Bag Gonu.lud",
+        "board/space/blocking/Jostle.lud"
+    ],
+    "puzzle/planning/Monty Hall Problem.lud": [
+        "puzzle/planning/Lam Turki.lud",
+        "puzzle/planning/Nao Gutiya Baithaneka.lud",
+        "puzzle/planning/Pentalpha.lud"
+    ],
+    "board/space/territory/Mig Mang.lud": [
+        "board/space/territory/Lava.lud",
+        "board/space/territory/Trike.lud",
+        "board/space/territory/Reversi.lud"
+    ],
+    "board/space/line/Mulabalaba.lud": [
+        "board/space/line/Yavalax.lud",
+        "board/space/line/Symbol S.2.lud",
+        "board/space/line/Dai Hasami Shogi.lud"
+    ],
+    "board/war/replacement/eliminate/all/Rampart.lud": [
+        "board/war/replacement/eliminate/all/Awangdu.lud",
+        "board/war/replacement/eliminate/all/Issiren.lud",
+        "board/war/replacement/eliminate/all/Diagonals (2002).lud"
+    ],
+    "board/space/territory/Reversi.lud": [
+        "board/space/territory/Trike.lud",
+        "board/space/territory/Cavity.lud",
+        "board/space/territory/Verge.lud"
+    ],
+    "board/space/line/Marelle Triple.lud": [
+        "board/space/line/Six Men's Morris.lud",
+        "board/space/line/Nerenchi Keliya.lud",
+        "board/space/line/Xonin Shatar (Simple).lud"
+    ],
+    "reconstruction/done/board/space/line/Rwandan Alignment Game.lud": [
+        "reconstruction/done/board/space/line/Sgjough.lud",
+        "reconstruction/done/board/space/line/Hujura.lud",
+        "reconstruction/done/board/space/line/Dris et-Tessa (Diagonals).lud"
+    ],
+    "reconstruction/done/board/war/other/Selayar Game.lud": [
+        "reconstruction/done/board/war/other/Cumisitha.lud",
+        "reconstruction/done/board/war/other/Ludus Rebellionis 2.lud",
+        "reconstruction/done/board/war/other/Eleven-Fang.lud"
+    ],
+    "board/space/line/Six-Penny Madell.lud": [
+        "board/space/line/Aqrad.lud",
+        "board/space/line/Moxie.lud",
+        "board/space/line/Tic-Tac-Chess.lud"
+    ],
+    "reconstruction/done/board/space/line/Adzua.lud": [
+        "reconstruction/done/board/space/line/Sgjough.lud",
+        "reconstruction/done/board/space/line/Adzua (Children).lud",
+        "reconstruction/done/board/space/line/Li'b al-Sidr.lud"
+    ],
+    "board/space/line/Xonin Shatar (Simple).lud": [
+        "board/space/line/Nao Guti.lud",
+        "board/space/line/Six Men's Morris.lud",
+        "board/space/line/Yavalax.lud"
+    ],
+    "board/hunt/Nuktagaq.lud": [
+        "board/hunt/Orissa Tiger Game (Four Tigers).lud",
+        "board/hunt/Gasetavl.lud",
+        "board/hunt/Bam Blang Beh Khla.lud"
+    ],
+    "board/sow/two_rows/Awari.lud": [
+        "board/sow/two_rows/Um el-Bil.lud",
+        "board/sow/two_rows/Enindji.lud",
+        "board/sow/two_rows/Woli.lud"
+    ],
+    "board/sow/two_rows/Oure Ngat.lud": [
+        "board/sow/two_rows/Kay.lud",
+        "board/sow/two_rows/Altiev.lud",
+        "board/sow/two_rows/Ntyenge.lud"
+    ],
+    "puzzle/deduction/Fill A Pix.lud": [
+        "puzzle/deduction/Squaro.lud",
+        "puzzle/deduction/Slitherlink.lud",
+        "puzzle/deduction/Anti-Knight Sudoku.lud"
+    ],
+    "board/space/connection/Troll.lud": [
+        "board/space/connection/Scaffold.lud",
+        "board/space/connection/Bipartisan Y.lud",
+        "board/space/connection/Atoll.lud"
+    ],
+    "board/sow/two_rows/Uril.lud": [
+        "board/sow/two_rows/French Wari.lud",
+        "board/sow/two_rows/Meusueb.lud",
+        "board/sow/two_rows/Boukerourou.lud"
+    ],
+    "board/space/line/Tule Paid.lud": [
+        "board/space/line/Gurgaldaj.lud",
+        "board/space/line/Nao Guti.lud",
+        "board/space/line/Symbol S.2.lud"
+    ],
+    "reconstruction/done/board/space/line/Feldja.lud": [
+        "reconstruction/done/board/space/line/Nzengue (Large).lud",
+        "reconstruction/done/board/space/line/Duqurjin.lud",
+        "reconstruction/done/board/space/line/Dris et-Tessa.lud"
+    ],
+    "board/space/territory/Ataxx.lud": [
+        "board/space/territory/Trike.lud",
+        "board/space/territory/Lotus.lud",
+        "board/space/territory/Mig Mang.lud"
+    ],
+    "board/hunt/Ludus Coriovalli.lud": [
+        "board/hunt/La Yagua.lud",
+        "board/hunt/Demala Diviyan Keliya.lud",
+        "board/hunt/Hund efter Hare (Vendsyssel).lud"
+    ],
+    "board/hunt/Neg Tugal Tuux.lud": [
+        "board/hunt/Janes Soppi.lud",
+        "board/hunt/Mao Naga Tiger Game.lud",
+        "board/hunt/La Liebre Perseguida.lud"
+    ],
+    "reconstruction/done/board/space/line/Dris et-Tessa (Diagonals).lud": [
+        "reconstruction/done/board/space/line/Adzua.lud",
+        "reconstruction/done/board/space/line/Nzengue (Large).lud",
+        "reconstruction/done/board/space/line/Duqurjin.lud"
+    ],
+    "reconstruction/done/board/hunt/Fortresse.lud": [
+        "reconstruction/done/board/hunt/Puma.lud",
+        "reconstruction/done/board/hunt/Solitario.lud",
+        "reconstruction/done/board/hunt/Talyn Buga.lud"
+    ],
+    "board/space/line/Fettas.lud": [
+        "board/space/line/Notakto.lud",
+        "board/space/line/Triodi (Diagonal).lud",
+        "board/space/line/Shiva.lud"
+    ],
+    "board/sow/two_rows/Das Bohnenspiel.lud": [
+        "board/sow/two_rows/Hoyito.lud",
+        "board/sow/two_rows/Chonka.lud",
+        "board/sow/two_rows/Adidada.lud"
+    ],
+    "board/hunt/Hund efter Hare (Vendsyssel).lud": [
+        "board/hunt/Hyvn aetter Hare.lud",
+        "board/hunt/Shi Liu Kan Tsiang Kun.lud",
+        "board/hunt/Main Tapak Empat.lud"
+    ],
+    "reconstruction/done/board/space/line/Atidada.lud": [
+        "reconstruction/done/board/space/line/Sgjough.lud",
+        "reconstruction/done/board/space/line/Picaria (Large).lud",
+        "reconstruction/done/board/space/line/Al-Qirq.lud"
+    ],
+    "board/hunt/La Liebre Perseguida.lud": [
+        "board/hunt/Neg Tugal Tuux.lud",
+        "board/hunt/Wolf und Schaaf.lud",
+        "board/hunt/Baghchal.lud"
+    ],
+    "board/war/leaping/lines/Pam Pait.lud": [
+        "board/war/leaping/lines/Tuknanavuhpi.lud",
+        "board/war/leaping/lines/Gol Ekuish.lud",
+        "board/war/leaping/lines/Crand.lud"
+    ],
+    "reconstruction/done/board/space/line/Che Lo.lud": [
+        "reconstruction/done/board/space/line/Malomjatek.lud",
+        "reconstruction/done/board/space/line/Rwandan Alignment Game.lud",
+        "reconstruction/done/board/space/line/Atidada.lud"
+    ],
+    "board/space/line/Dai Hasami Shogi.lud": [
+        "board/space/line/Triodi (Diagonal).lud",
+        "board/space/line/Xonin Shatar (Simple).lud",
+        "board/space/line/Nao Guti.lud"
+    ],
+    "board/space/blocking/Ratio.lud": [
+        "board/space/blocking/Ho-Bag Gonu.lud",
+        "board/space/blocking/Susan.lud",
+        "board/space/blocking/Jostle.lud"
+    ],
+    "board/hunt/Hyvn aetter Hare.lud": [
+        "board/hunt/Orissa Tiger Game (Four Tigers).lud",
+        "board/hunt/Bam Blang Beh Khla.lud",
+        "board/hunt/Mysore Tiger Game (Two Tigers).lud"
+    ],
+    "board/space/territory/MacBeth.lud": [
+        "board/space/territory/Patok.lud",
+        "board/space/territory/Ataxx.lud",
+        "board/space/territory/Lava.lud"
+    ],
+    "board/hunt/Sumi Naga Game (Hunt).lud": [
+        "board/hunt/Demala Diviyan Keliya.lud",
+        "board/hunt/Jeu Militaire.lud",
+        "board/hunt/Mysore Tiger Game (Two Tigers).lud"
+    ],
+    "board/hunt/Mao Naga Tiger Game.lud": [
+        "board/hunt/Demala Diviyan Keliya.lud",
+        "board/hunt/Orissa Tiger Game (Four Tigers).lud",
+        "board/hunt/Shi Liu Kan Tsiang Kun.lud"
+    ],
+    "board/war/replacement/eliminate/all/Fission.lud": [
+        "board/war/replacement/eliminate/all/Ja-Jeon-Geo-Gonu.lud",
+        "board/war/replacement/eliminate/all/Issiren.lud",
+        "board/war/replacement/eliminate/all/Oust.lud"
+    ],
+    "board/hunt/Janes Soppi.lud": [
+        "board/hunt/Mysore Tiger Game.lud",
+        "board/hunt/Baghchal.lud",
+        "board/hunt/Sumi Naga Game (Hunt).lud"
+    ],
+    "reconstruction/done/board/space/line/Nzengue (Large).lud": [
+        "reconstruction/done/board/space/line/Sgjough.lud",
+        "reconstruction/done/board/space/line/Dris et-Tessa (Diagonals).lud",
+        "reconstruction/done/board/space/line/Che Lo.lud"
+    ],
+    "board/space/blocking/Janes Soppi (Symmetrical).lud": [
+        "board/space/blocking/Quantum Leap.lud",
+        "board/space/blocking/Ratio.lud",
+        "board/space/blocking/Pentomino.lud"
+    ],
+    "board/space/blocking/Susan.lud": [
+        "board/space/blocking/Ratio.lud",
+        "board/space/blocking/Claustro.lud",
+        "board/space/blocking/Janes Soppi (Symmetrical).lud"
+    ],
+    "board/space/connection/Scaffold.lud": [
+        "board/space/connection/Defector Y.lud",
+        "board/space/connection/Bipartisan Y.lud",
+        "board/space/connection/Abak.lud"
+    ],
+    "board/war/leaping/lines/Crand.lud": [
+        "board/war/leaping/lines/Pam Pait.lud",
+        "board/war/leaping/lines/Padaivettu.lud",
+        "board/war/leaping/lines/Tavelspel.lud"
+    ],
+    "board/sow/two_rows/Fondji.lud": [
+        "board/sow/two_rows/Hoyito.lud",
+        "board/sow/two_rows/Kay.lud",
+        "board/sow/two_rows/Kpo.lud"
+    ],
+    "board/space/line/Dara.lud": [
+        "board/space/line/Mylna.lud",
+        "board/space/line/Symbol S.2.lud",
+        "board/space/line/Nao Guti.lud"
+    ],
+    "board/sow/two_rows/Ntyenge.lud": [
+        "board/sow/two_rows/Chungcajon.lud",
+        "board/sow/two_rows/Aw-li On-nam Ot-tjin.lud",
+        "board/sow/two_rows/Das Bohnenspiel.lud"
+    ],
+    "board/space/group/Yoin.lud": [
+        "board/space/group/Signum.lud",
+        "board/space/group/Feed the Ducks.lud",
+        "board/space/group/Mono.lud"
+    ],
+    "board/war/leaping/lines/Tuknanavuhpi.lud": [
+        "board/war/leaping/lines/Dash Guti.lud",
+        "board/war/leaping/lines/Crand.lud",
+        "board/war/leaping/lines/Kolowis Awithlaknannai.lud"
+    ],
+    "reconstruction/done/board/space/line/Rongmei Naga Alignment Game.lud": [
+        "reconstruction/done/board/space/line/Trique.lud",
+        "reconstruction/done/board/space/line/Malomjatek.lud",
+        "reconstruction/done/board/space/line/Rwandan Alignment Game.lud"
+    ],
+    "board/hunt/Shui Yen Ho-Shang.lud": [
+        "board/hunt/Nuktagaq.lud",
+        "board/hunt/Shi Liu Kan Tsiang Kun.lud",
+        "board/hunt/Gasetavl.lud"
+    ],
+    "board/war/leaping/lines/Dash Guti.lud": [
+        "board/war/leaping/lines/Tavelspel.lud",
+        "board/war/leaping/lines/Padaivettu.lud",
+        "board/war/leaping/lines/Crand.lud"
+    ],
+    "board/war/leaping/lines/Kolowis Awithlaknannai.lud": [
+        "board/war/leaping/lines/Sumi Naga Game (War).lud",
+        "board/war/leaping/lines/Tuknanavuhpi.lud",
+        "board/war/leaping/lines/Dash Guti.lud"
+    ],
+    "board/space/blocking/Ho-Bag Gonu.lud": [
+        "board/space/blocking/Ratio.lud",
+        "board/space/blocking/Janes Soppi (Symmetrical).lud",
+        "board/space/blocking/Claustro.lud"
+    ],
+    "board/sow/two_rows/French Wari.lud": [
+        "board/sow/two_rows/Halusa.lud",
+        "board/sow/two_rows/Woli.lud",
+        "board/sow/two_rows/Kapana Bona.lud"
+    ],
+    "experimental/Greatest Loss.lud": [
+        "experimental/Freeze Frenzy.lud",
+        "experimental/Conflagration and Keep-a-riding.lud",
+        "experimental/Greater Even Loss.lud"
+    ],
+    "puzzle/planning/Nao Gutiya Baithaneka.lud": [
+        "puzzle/planning/Lam Turki.lud",
+        "puzzle/planning/Pentalpha.lud",
+        "puzzle/planning/Monty Hall Problem.lud"
+    ],
+    "board/space/line/Six Men's Morris.lud": [
+        "board/space/line/Xonin Shatar (Simple).lud",
+        "board/space/line/Altan Xaraacaj.lud",
+        "board/space/line/Shiva.lud"
+    ],
+    "board/war/leaping/lines/Gol Ekuish.lud": [
+        "board/war/leaping/lines/Kotu Ellima.lud",
+        "board/war/leaping/lines/Kolowis Awithlaknannai.lud",
+        "board/war/leaping/lines/Dash Guti.lud"
+    ],
+    "reconstruction/done/board/hunt/Comina.lud": [
+        "reconstruction/done/board/hunt/Talyn Buga.lud",
+        "reconstruction/done/board/hunt/Lay Gwet Kyah.lud",
+        "reconstruction/done/board/hunt/Raquithue.lud"
+    ],
+    "board/space/territory/Verge.lud": [
+        "board/space/territory/Phantom Go.lud",
+        "board/space/territory/Ataxx.lud",
+        "board/space/territory/Lotus.lud"
+    ],
+    "board/hunt/Yeung Luk Sz' Kon Tseung Kwan.lud": [
+        "board/hunt/Haretavl.lud",
+        "board/hunt/Main Tapak Empat.lud",
+        "board/hunt/Ludus Coriovalli.lud"
+    ],
+    "board/space/line/Keryo-Pente.lud": [
+        "board/space/line/Symbol S.2.lud",
+        "board/space/line/Moxie.lud",
+        "board/space/line/Shiva.lud"
+    ],
+    "board/war/leaping/lines/Ram Tir.lud": [
+        "board/war/leaping/lines/Crand.lud",
+        "board/war/leaping/lines/Kharbaga.lud",
+        "board/war/leaping/lines/Kotu Ellima.lud"
+    ],
+    "board/space/line/Tic-Tac-Chess.lud": [
+        "board/space/line/Notakto.lud",
+        "board/space/line/Mulabalaba.lud",
+        "board/space/line/Altan Xaraacaj.lud"
+    ],
+    "board/hunt/Hat Diviyan Keliya.lud": [
+        "board/hunt/Shi Liu Kan Tsiang Kun.lud",
+        "board/hunt/Demala Diviyan Keliya.lud",
+        "board/hunt/Orissa Tiger Game (Four Tigers).lud"
+    ],
+    "experimental/Greater Loss.lud": [
+        "experimental/Greatest Loss.lud",
+        "experimental/Greater.lud",
+        "experimental/Greater Even Loss.lud"
+    ],
+    "puzzle/deduction/Squaro.lud": [
+        "puzzle/deduction/Killer Sudoku.lud",
+        "puzzle/deduction/Anti-Knight Sudoku.lud",
+        "puzzle/deduction/Slitherlink.lud"
+    ],
+    "board/space/group/Feed the Ducks.lud": [
+        "board/space/group/Abrobad.lud",
+        "board/space/group/Mono.lud",
+        "board/space/group/Signum.lud"
+    ],
+    "board/space/blocking/Jostle.lud": [
+        "board/space/blocking/Quantum Leap.lud",
+        "board/space/blocking/Ho-Bag Gonu.lud",
+        "board/space/blocking/Claustro.lud"
+    ],
+    "board/sow/two_rows/Um el-Bil.lud": [
+        "board/sow/two_rows/Altiev.lud",
+        "board/sow/two_rows/Das Bohnenspiel.lud",
+        "board/sow/two_rows/Kay.lud"
+    ],
+    "board/hunt/Baghchal.lud": [
+        "board/hunt/Wolf und Schaaf.lud",
+        "board/hunt/Fox and Geese.lud",
+        "board/hunt/Sher Bakr.lud"
+    ],
+    "board/space/line/Xanan Zirge.lud": [
+        "board/space/line/Xonin Shatar (Simple).lud",
+        "board/space/line/Six-Penny Madell.lud",
+        "board/space/line/Tule Paid.lud"
+    ],
+    "reconstruction/done/board/space/line/Al-Qirq.lud": [
+        "reconstruction/done/board/space/line/Picaria (Large).lud",
+        "reconstruction/done/board/space/line/Rwandan Alignment Game.lud",
+        "reconstruction/done/board/space/line/Nzengue (Large).lud"
+    ],
+    "board/hunt/Gasetavl.lud": [
+        "board/hunt/Janes Soppi.lud",
+        "board/hunt/Yeung Luk Sz' Kon Tseung Kwan.lud",
+        "board/hunt/Orissa Tiger Game (Four Tigers).lud"
+    ],
+    "board/hunt/Hund efter Hare (Thy).lud": [
+        "board/hunt/Janes Soppi.lud",
+        "board/hunt/Jeu Militaire.lud",
+        "board/hunt/Nuktagaq.lud"
+    ],
+    "board/hunt/Jeu Militaire.lud": [
+        "board/hunt/Gala.lud",
+        "board/hunt/Mao Naga Tiger Game.lud",
+        "board/hunt/Main Tapak Empat.lud"
+    ],
+    "board/hunt/Bouge Shodra.lud": [
+        "board/hunt/La Yagua.lud",
+        "board/hunt/El Zorro.lud",
+        "board/hunt/Sher Bakr.lud"
+    ],
+    "board/sow/two_rows/Unnee Tugalluulax.lud": [
+        "board/sow/two_rows/Kapana Bona.lud",
+        "board/sow/two_rows/Shono.lud",
+        "board/sow/two_rows/Altiev.lud"
+    ],
+    "reconstruction/done/board/hunt/Lay Gwet Kyah.lud": [
+        "reconstruction/done/board/hunt/Raquithue.lud",
+        "reconstruction/done/board/hunt/Fortresse.lud",
+        "reconstruction/done/board/hunt/Talyn Buga.lud"
+    ],
+    "board/space/group/Abrobad.lud": [
+        "board/space/group/Mono.lud",
+        "board/space/group/Yoin.lud",
+        "board/space/group/Signum.lud"
+    ],
+    "board/hunt/Haretavl.lud": [
+        "board/hunt/El Zorro.lud",
+        "board/hunt/Hund efter Hare (Thy).lud",
+        "board/hunt/Kaooa.lud"
+    ],
+    "reconstruction/done/board/space/line/Yakamaido.lud": [
+        "reconstruction/done/board/space/line/Feldja.lud",
+        "reconstruction/done/board/space/line/Atidada.lud",
+        "reconstruction/done/board/space/line/Che Lo.lud"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "board/race/reach/Center.lud": [
+        "board/race/reach/King's Valley.lud",
+        "board/race/reach/Jeson Mor.lud",
+        "board/race/reach/Knightthrough.lud"
+    ],
+    "board/race/reach/Breakthrough.lud": [
+        "board/race/reach/Jeson Mor.lud",
+        "board/race/reach/Knightthrough.lud",
+        "board/race/reach/Bombardment.lud"
+    ],
+    "board/race/reach/Jeson Mor.lud": [
+        "board/race/reach/Bombardment.lud",
+        "board/race/reach/Center.lud",
+        "board/race/reach/Breakthrough.lud"
+    ],
+    "board/race/reach/Knightthrough.lud": [
+        "board/race/reach/Breakthrough.lud",
+        "board/race/reach/Center.lud",
+        "board/race/reach/King's Valley.lud"
+    ],
+    "board/race/reach/Bombardment.lud": [
+        "board/race/reach/King's Valley.lud",
+        "board/race/reach/Jeson Mor.lud",
+        "board/race/reach/Knightthrough.lud"
+    ],
+    "board/race/reach/King's Valley.lud": [
+        "board/race/reach/Knightthrough.lud",
+        "board/race/reach/Jeson Mor.lud",
+        "board/race/reach/Bombardment.lud"
+    ],
+    "board/race/fill/Aralzaa.lud": [
+        "board/race/fill/O-Pat-Kono.lud",
+        "board/race/fill/Lelac.lud",
+        "board/race/fill/Bajr.lud"
+    ],
+    "board/race/fill/Bajr.lud": [
+        "board/race/fill/Aralzaa.lud",
+        "board/race/fill/Lelac.lud",
+        "board/race/fill/O-Pat-Kono.lud"
+    ],
+    "board/race/fill/Lelac.lud": [
+        "board/race/fill/Aralzaa.lud",
+        "board/race/fill/Bajr.lud",
+        "board/race/fill/O-Pat-Kono.lud"
+    ],
+    "board/race/fill/O-Pat-Kono.lud": [
+        "board/race/fill/Bajr.lud",
+        "board/race/fill/Lelac.lud",
+        "board/race/fill/Aralzaa.lud"
+    ]
+}
