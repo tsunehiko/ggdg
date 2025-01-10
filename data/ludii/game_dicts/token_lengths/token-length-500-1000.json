@@ -1,0 +1,502 @@
+{
+    "board/war/custodial/ArdRi.lud": [
+        "board/war/custodial/Breakthru.lud",
+        "board/war/custodial/Tablut.lud",
+        "board/war/custodial/Hnefatafl.lud"
+    ],
+    "board/race/fill/Tablan.lud": [
+        "board/race/fill/Barca.lud",
+        "board/race/fill/Cascades.lud",
+        "board/race/fill/Agon.lud"
+    ],
+    "board/war/leaping/lines/Peralikatuma.lud": [
+        "board/war/leaping/lines/Ahtarah Guti.lud",
+        "board/war/leaping/lines/Mughal Pathan.lud",
+        "board/war/leaping/lines/Mogul Putt'han.lud"
+    ],
+    "board/sow/two_rows/Gamacha.lud": [
+        "board/sow/two_rows/Deka.lud",
+        "board/sow/two_rows/La'b Akila.lud",
+        "board/sow/two_rows/Sonka.lud"
+    ],
+    "experimental/graph_theory/Ilpion.lud": [
+        "experimental/graph_theory/CrossGeo.lud",
+        "experimental/graph_theory/Line and Cross.lud",
+        "experimental/graph_theory/Radran.lud"
+    ],
+    "board/space/line/Quarto.lud": [
+        "board/space/line/Minefield.lud",
+        "board/space/line/Nine Men's Morris.lud",
+        "board/space/line/Dig Dig.lud"
+    ],
+    "board/war/replacement/checkmate/chaturanga/Shodra.lud": [
+        "board/war/replacement/checkmate/chaturanga/Chandaraki.lud",
+        "board/war/replacement/checkmate/chaturanga/Santaraj.lud",
+        "board/war/replacement/checkmate/chaturanga/Shatranj (Turkey).lud"
+    ],
+    "board/race/reach/Geister.lud": [
+        "board/race/reach/Sneakthrough.lud",
+        "board/race/reach/Gauntlet.lud",
+        "board/race/reach/Pylos.lud"
+    ],
+    "experimental/graph_theory/LastEdge.lud": [
+        "experimental/graph_theory/SpanRups.lud",
+        "experimental/graph_theory/CrossGeo.lud",
+        "experimental/graph_theory/Ilpion.lud"
+    ],
+    "board/space/group/RootZone.lud": [
+        "board/space/group/Brain Coral.lud",
+        "board/space/group/Meridians.lud",
+        "board/space/group/Lines of Action.lud"
+    ],
+    "board/space/line/Dig Dig.lud": [
+        "board/space/line/Ringo.lud",
+        "board/space/line/Shah.lud",
+        "board/space/line/La Chascona.lud"
+    ],
+    "board/race/reach/Sneakthrough.lud": [
+        "board/race/reach/Geister.lud",
+        "board/race/reach/Tamman.lud",
+        "board/race/reach/Siga (Sri Lanka).lud"
+    ],
+    "board/race/escape/Ssang-Ryouk.lud": [
+        "board/race/escape/Cab e Quinal.lud",
+        "board/race/escape/Jacquet.lud",
+        "board/race/escape/Seys Dos y As.lud"
+    ],
+    "board/hunt/Gioco dell'Orso.lud": [
+        "board/hunt/Renard et les Poules.lud",
+        "board/hunt/El Perro.lud",
+        "board/hunt/Bagh Bandi.lud"
+    ],
+    "board/war/leaping/lines/Terhuchu.lud": [
+        "board/war/leaping/lines/Mogul Putt'han.lud",
+        "board/war/leaping/lines/Game of Solomon.lud",
+        "board/war/leaping/lines/Dama (Alquerque).lud"
+    ],
+    "experimental/graph_theory/Line and Cross.lud": [
+        "experimental/graph_theory/SpanRups.lud",
+        "experimental/graph_theory/Radran.lud",
+        "experimental/graph_theory/LastEdge.lud"
+    ],
+    "board/hunt/Musinaykahwhanmetowaywin.lud": [
+        "board/hunt/Bagh Guti.lud",
+        "board/hunt/Uxrijn Ever.lud",
+        "board/hunt/Gala (Buginese).lud"
+    ],
+    "board/race/escape/Ashta-kashte.lud": [
+        "board/race/escape/Pachesi.lud",
+        "board/race/escape/Kawade Kelia.lud",
+        "board/race/escape/Baralie.lud"
+    ],
+    "board/war/leaping/lines/Fetach.lud": [
+        "board/war/leaping/lines/Peralikatuma.lud",
+        "board/war/leaping/lines/Dama (Alquerque).lud",
+        "board/war/leaping/lines/Kharberg.lud"
+    ],
+    "board/war/replacement/checkmate/chess/Half Chess.lud": [
+        "board/war/replacement/checkmate/chess/Shatera.lud",
+        "board/war/replacement/checkmate/chess/Medieval Chess.lud",
+        "board/war/replacement/checkmate/chess/Los Alamos Chess.lud"
+    ],
+    "experimental/Breakthrough Checkers.lud": [
+        "experimental/Wrigglers.lud",
+        "experimental/Breakthrough Chess.lud",
+        "experimental/Wrigglers Squared.lud"
+    ],
+    "board/sow/two_rows/Um el-Bagara.lud": [
+        "board/sow/two_rows/Duene.lud",
+        "board/sow/two_rows/Gabata (Oromo).lud",
+        "board/sow/two_rows/Um el Tuweisat.lud"
+    ],
+    "experimental/graph_theory/Radran.lud": [
+        "experimental/graph_theory/Line and Cross.lud",
+        "experimental/graph_theory/SpanRups.lud",
+        "experimental/graph_theory/Ilpion.lud"
+    ],
+    "board/race/escape/Emperador.lud": [
+        "board/race/escape/Kawade Kelia.lud",
+        "board/race/escape/Uturu Uturu Kaida.lud",
+        "board/race/escape/Kints.lud"
+    ],
+    "board/sow/two_rows/Sonka.lud": [
+        "board/sow/two_rows/Chongka'.lud",
+        "board/sow/two_rows/Khrour.lud",
+        "board/sow/two_rows/Ti.lud"
+    ],
+    "board/sow/two_rows/Deka.lud": [
+        "board/sow/two_rows/Kalah.lud",
+        "board/sow/two_rows/Qelat (Beni Amir-Mensa).lud",
+        "board/sow/two_rows/Luuth.lud"
+    ],
+    "board/race/escape/Nard.lud": [
+        "board/race/escape/Kints.lud",
+        "board/race/escape/Los Doze Canes.lud",
+        "board/race/escape/Seys Dos y As.lud"
+    ],
+    "board/race/escape/Myles.lud": [
+        "board/race/escape/Ludus Lombardorum.lud",
+        "board/race/escape/Ashta-kashte.lud",
+        "board/race/escape/El Mundo.lud"
+    ],
+    "board/race/reach/Setichch.lud": [
+        "board/race/reach/Geister.lud",
+        "board/race/reach/Sneakthrough.lud",
+        "board/race/reach/Santorini.lud"
+    ],
+    "board/war/leaping/orthogonal/Louis XVI.lud": [
+        "board/war/leaping/orthogonal/Jumping Beans.lud",
+        "board/war/leaping/orthogonal/Mraha wa Bwe.lud",
+        "board/war/leaping/orthogonal/Zuz Mel (5x5).lud"
+    ],
+    "board/race/escape/Uturu Uturu Kaida.lud": [
+        "board/race/escape/Baralie.lud",
+        "board/race/escape/Pachesi.lud",
+        "board/race/escape/Imperial.lud"
+    ],
+    "board/race/escape/Kints.lud": [
+        "board/race/escape/Nard.lud",
+        "board/race/escape/Royal Game of Ur.lud",
+        "board/race/escape/Ludus Lombardorum.lud"
+    ],
+    "board/race/escape/Pareia de Entrada.lud": [
+        "board/race/escape/Baralie.lud",
+        "board/race/escape/Barjis.lud",
+        "board/race/escape/Ludus Anglicorum.lud"
+    ],
+    "board/sow/two_rows/I.lud": [
+        "board/sow/two_rows/Sonka.lud",
+        "board/sow/two_rows/Yovodi.lud",
+        "board/sow/two_rows/Mangala (Suez).lud"
+    ],
+    "board/space/connection/Trax.lud": [
+        "board/space/connection/Onyx.lud",
+        "board/space/connection/Pippinzip.lud",
+        "board/space/connection/ConHex.lud"
+    ],
+    "board/race/escape/Ludus Lombardorum.lud": [
+        "board/race/escape/Nard.lud",
+        "board/race/escape/Jacquet.lud",
+        "board/race/escape/Barjis.lud"
+    ],
+    "board/war/replacement/eliminate/all/Triad.lud": [
+        "board/war/replacement/eliminate/all/Sig (Tozeur).lud",
+        "board/war/replacement/eliminate/all/Tablas Astronomias.lud",
+        "board/war/replacement/eliminate/all/Udat Pagada.lud"
+    ],
+    "board/war/leaping/lines/Dama (Alquerque).lud": [
+        "board/war/leaping/lines/Lam Pusri.lud",
+        "board/war/leaping/lines/Mughal Pathan.lud",
+        "board/war/leaping/lines/Hewakam Keliya.lud"
+    ],
+    "board/war/leaping/lines/Game of Solomon.lud": [
+        "board/war/leaping/lines/Ahtarah Guti.lud",
+        "board/war/leaping/lines/Hewakam Keliya.lud",
+        "board/war/leaping/lines/Terhuchu.lud"
+    ],
+    "board/war/replacement/checkmate/chaturanga/Shatranj.lud": [
+        "board/war/replacement/checkmate/chaturanga/Chaturanga (al-Adli).lud",
+        "board/war/replacement/checkmate/chaturanga/Chandaraki.lud",
+        "board/war/replacement/checkmate/chaturanga/Shodra.lud"
+    ],
+    "board/space/connection/Unlur.lud": [
+        "board/space/connection/Tara.lud",
+        "board/space/connection/Onyx.lud",
+        "board/space/connection/DuploHex.lud"
+    ],
+    "board/war/custodial/Hnefatafl.lud": [
+        "board/war/custodial/Awithlaknakwe.lud",
+        "board/war/custodial/ArdRi.lud",
+        "board/war/custodial/Tablut.lud"
+    ],
+    "board/sow/four_rows/Nchayo.lud": [
+        "board/sow/four_rows/Musoro Tsoro.lud",
+        "board/sow/four_rows/Nsumbi.lud",
+        "board/sow/four_rows/Chiana wa Kunja.lud"
+    ],
+    "board/space/connection/Onyx.lud": [
+        "board/space/connection/Coil.lud",
+        "board/space/connection/00'Y'.lud",
+        "board/space/connection/Tara.lud"
+    ],
+    "board/hunt/Renard et les Poules.lud": [
+        "board/hunt/Sher Bakar.lud",
+        "board/hunt/Rimau-Rimau (One Tiger).lud",
+        "board/hunt/Len Cua Kin Ngoa.lud"
+    ],
+    "board/war/leaping/orthogonal/Jumping Beans.lud": [
+        "board/war/leaping/orthogonal/Konane.lud",
+        "board/war/leaping/orthogonal/Tablo.lud",
+        "board/war/leaping/orthogonal/Mraha wa Bwe.lud"
+    ],
+    "board/war/custodial/Tablut.lud": [
+        "board/war/custodial/Hnefatafl.lud",
+        "board/war/custodial/ArdRi.lud",
+        "board/war/custodial/Tawlbwrdd.lud"
+    ],
+    "board/war/replacement/eliminate/all/Daldos.lud": [
+        "board/war/replacement/eliminate/all/Sig (El Oued Capture).lud",
+        "board/war/replacement/eliminate/all/Boxijn Barildaan.lud",
+        "board/war/replacement/eliminate/all/Daldosa.lud"
+    ],
+    "board/war/replacement/checkmate/chaturanga/Shatranj (Turkey).lud": [
+        "board/war/replacement/checkmate/chaturanga/Santaraj.lud",
+        "board/war/replacement/checkmate/chaturanga/Saxun.lud",
+        "board/war/replacement/checkmate/chaturanga/Shatranj (Algeria).lud"
+    ],
+    "experimental/Watershed.lud": [
+        "experimental/Faraday.lud",
+        "experimental/Windflowers.lud",
+        "experimental/Astralesce and Constellation.lud"
+    ],
+    "board/space/territory/Tumbleweed.lud": [
+        "board/space/territory/HexTrike.lud",
+        "board/space/territory/Flower Shop.lud",
+        "board/space/territory/Redstone.lud"
+    ],
+    "puzzle/deduction/Sujiken.lud": [
+        "puzzle/deduction/Kakuro.lud",
+        "puzzle/deduction/Hoshi.lud",
+        "puzzle/deduction/Tridoku.lud"
+    ],
+    "reconstruction/done/board/war/replacement/checkmate/chaturanga/Chatrang (Sassanian).lud": [
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Shakhmaty (Medieval).lud",
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Chaturanga (Payagunda).lud",
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Shatranj al-Jawarhiya.lud"
+    ],
+    "board/space/group/Meridians.lud": [
+        "board/space/group/Catchup.lud",
+        "board/space/group/Lines of Action.lud",
+        "board/space/group/Brain Coral.lud"
+    ],
+    "math/graph/Icosian.lud": [
+        "math/graph/Hamiltonian Maze.lud",
+        "math/graph/Crossline.lud",
+        "math/graph/Contagion.lud"
+    ],
+    "board/sow/four_rows/Chiana wa Bwalo.lud": [
+        "board/sow/four_rows/Chiana wa Kunja.lud",
+        "board/sow/four_rows/Lisolo.lud",
+        "board/sow/four_rows/Hawalis.lud"
+    ],
+    "board/race/fill/Tandems.lud": [
+        "board/race/fill/Agon.lud",
+        "board/race/fill/Barca.lud",
+        "board/race/fill/Cascades.lud"
+    ],
+    "board/race/escape/Pachesi.lud": [
+        "board/race/escape/Kiz Tavlasi.lud",
+        "board/race/escape/Ludus Anglicorum.lud",
+        "board/race/escape/Emperador.lud"
+    ],
+    "reconstruction/done/board/war/replacement/checkmate/chaturanga/Chess (Siberia).lud": [
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Chaturanga (Payagunda).lud",
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Shatranj al-Jawarhiya.lud",
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Sfenj.lud"
+    ],
+    "board/space/line/Tavan Tal.lud": [
+        "board/space/line/Twelve Men's Morris.lud",
+        "board/space/line/Minefield.lud",
+        "board/space/line/Dig Dig.lud"
+    ],
+    "board/sow/four_rows/Ngulungu.lud": [
+        "board/sow/four_rows/Mwendo.lud",
+        "board/sow/four_rows/Njombwa (Two Counters).lud",
+        "board/sow/four_rows/Musoro Tsoro.lud"
+    ],
+    "board/war/replacement/eliminate/all/Tank Tactics.lud": [
+        "board/war/replacement/eliminate/all/Tablas Astronomias.lud",
+        "board/war/replacement/eliminate/all/Daldosa.lud",
+        "board/war/replacement/eliminate/all/Boxijn Barildaan.lud"
+    ],
+    "board/war/leaping/orthogonal/Tablo.lud": [
+        "board/war/leaping/orthogonal/Kanguruh.lud",
+        "board/war/leaping/orthogonal/Louis XVI.lud",
+        "board/war/leaping/orthogonal/Jumping Beans.lud"
+    ],
+    "puzzle/planning/Mawryngkneng Solitaire Game.lud": [
+        "puzzle/planning/Shisen-Sho.lud",
+        "puzzle/planning/BoxOff.lud",
+        "puzzle/planning/Labirintus.lud"
+    ],
+    "board/race/escape/Imperial.lud": [
+        "board/race/escape/Pachesi.lud",
+        "board/race/escape/El Mundo.lud",
+        "board/race/escape/Quinze Tablas.lud"
+    ],
+    "board/sow/four_rows/Moruba.lud": [
+        "board/sow/four_rows/Mwendo.lud",
+        "board/sow/four_rows/Tshuba.lud",
+        "board/sow/four_rows/Lisolo.lud"
+    ],
+    "board/war/leaping/lines/Satoel.lud": [
+        "board/war/leaping/lines/Fetach.lud",
+        "board/war/leaping/lines/Dam Hariman.lud",
+        "board/war/leaping/lines/Egara Guti.lud"
+    ],
+    "board/sow/two_rows/Khrour.lud": [
+        "board/sow/two_rows/Foji.lud",
+        "board/sow/two_rows/Qelat (Beni Amir-Mensa).lud",
+        "board/sow/two_rows/Toguz Kumalak.lud"
+    ],
+    "board/war/leaping/orthogonal/Koruboddo.lud": [
+        "board/war/leaping/orthogonal/Konane.lud",
+        "board/war/leaping/orthogonal/Challis Ghutia.lud",
+        "board/war/leaping/orthogonal/Zuz Mel (5x5).lud"
+    ],
+    "board/hunt/Komikan.lud": [
+        "board/hunt/Len Cua Kin Ngoa.lud",
+        "board/hunt/Sher Bakar.lud",
+        "board/hunt/Jeu de Renard (Two Foxes).lud"
+    ],
+    "reconstruction/done/board/war/replacement/checkmate/chaturanga/Chaturanga (Payagunda).lud": [
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Chatrang (Sassanian).lud",
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Shatranj al-Jawarhiya.lud",
+        "reconstruction/done/board/war/replacement/checkmate/chaturanga/Chess (Siberia).lud"
+    ],
+    "board/war/replacement/checkmate/chaturanga/Shatranj (Iraq).lud": [
+        "board/war/replacement/checkmate/chaturanga/Shatranj (Algeria).lud",
+        "board/war/replacement/checkmate/chaturanga/Shatranj at-Tamma.lud",
+        "board/war/replacement/checkmate/chaturanga/Shatranj (Turkey).lud"
+    ],
+    "board/war/replacement/checkmate/chaturanga/Cittabhramanrpasya Khelanam.lud": [
+        "board/war/replacement/checkmate/chaturanga/Mak Ruk.lud",
+        "board/war/replacement/checkmate/chaturanga/Tsatsarandi.lud",
+        "board/war/replacement/checkmate/chaturanga/Shatranj (Algeria).lud"
+    ],
+    "board/sow/two_rows/Gabata (Oromo).lud": [
+        "board/sow/two_rows/I Pere.lud",
+        "board/sow/two_rows/Toguz Kumalak.lud",
+        "board/sow/two_rows/La'b Akila.lud"
+    ],
+    "board/race/reach/Gavalata.lud": [
+        "board/race/reach/Gauntlet.lud",
+        "board/race/reach/Geister.lud",
+        "board/race/reach/Sneakthrough.lud"
+    ],
+    "board/war/replacement/checkmate/chaturanga/Mak Ruk.lud": [
+        "board/war/replacement/checkmate/chaturanga/Shatranj at-Tamma.lud",
+        "board/war/replacement/checkmate/chaturanga/Shodra.lud",
+        "board/war/replacement/checkmate/chaturanga/Shatranj (Turkey).lud"
+    ],
+    "board/race/escape/Seys Dos y As.lud": [
+        "board/race/escape/Emperador.lud",
+        "board/race/escape/Kints.lud",
+        "board/race/escape/Pareia de Entrada.lud"
+    ],
+    "board/sow/four_rows/Njombwa (Two Counters).lud": [
+        "board/sow/four_rows/Sute.lud",
+        "board/sow/four_rows/Nsumbi.lud",
+        "board/sow/four_rows/Ngolo.lud"
+    ],
+    "puzzle/planning/Minesweeper.lud": [
+        "puzzle/planning/BoxOff.lud",
+        "puzzle/planning/Shisen-Sho.lud",
+        "puzzle/planning/Mawryngkneng Solitaire Game.lud"
+    ],
+    "board/sow/two_rows/Motiq.lud": [
+        "board/sow/two_rows/Sonka.lud",
+        "board/sow/two_rows/Dabuda.lud",
+        "board/sow/two_rows/Yovodji.lud"
+    ],
+    "board/war/replacement/checkmate/chaturanga/Chaturanga (al-Adli).lud": [
+        "board/war/replacement/checkmate/chaturanga/Santaraj.lud",
+        "board/war/replacement/checkmate/chaturanga/Tsatsarandi.lud",
+        "board/war/replacement/checkmate/chaturanga/Chaturanga (Kridakausalya).lud"
+    ],
+    "board/race/reach/Pylos.lud": [
+        "board/race/reach/Setichch.lud",
+        "board/race/reach/Tamman.lud",
+        "board/race/reach/Geister.lud"
+    ],
+    "board/race/escape/Verquere.lud": [
+        "board/race/escape/Kiz Tavlasi.lud",
+        "board/race/escape/El Mundo.lud",
+        "board/race/escape/Pancha Keliya.lud"
+    ],
+    "board/war/replacement/eliminate/all/Sig (Mzab).lud": [
+        "board/war/replacement/eliminate/all/Udat Pagada.lud",
+        "board/war/replacement/eliminate/all/Sig (El Oued Capture).lud",
+        "board/war/replacement/eliminate/all/Annuvin.lud"
+    ],
+    "board/race/escape/El Mundo.lud": [
+        "board/race/escape/Pachesi.lud",
+        "board/race/escape/Imperial.lud",
+        "board/race/escape/Pareia de Entrada.lud"
+    ],
+    "board/hunt/El Perro.lud": [
+        "board/hunt/Merimueng-rimueng-do.lud",
+        "board/hunt/Len Cua Kin Ngoa.lud",
+        "board/hunt/Go with the Floe.lud"
+    ],
+    "board/hunt/Merimueng-rimueng.lud": [
+        "board/hunt/Bagh Guti.lud",
+        "board/hunt/Gala (Buginese).lud",
+        "board/hunt/Bagh Bandi.lud"
+    ],
+    "board/war/leaping/lines/Felli.lud": [
+        "board/war/leaping/lines/La Dama.lud",
+        "board/war/leaping/lines/Dam Hariman.lud",
+        "board/war/leaping/lines/Mughal Pathan.lud"
+    ],
+    "board/sow/four_rows/Tshuba.lud": [
+        "board/sow/four_rows/Bao Ki Arabu (Zanzibar 2).lud",
+        "board/sow/four_rows/Njombwa (Two Counters).lud",
+        "board/sow/four_rows/Nsumbi.lud"
+    ],
+    "board/hunt/Len Cua Kin Ngoa.lud": [
+        "board/hunt/Komikan.lud",
+        "board/hunt/Asalto.lud",
+        "board/hunt/Bagh Bandi.lud"
+    ],
+    "board/war/replacement/eliminate/all/Annuvin.lud": [
+        "board/war/replacement/eliminate/all/Daldosa.lud",
+        "board/war/replacement/eliminate/all/Bheri Bakhri.lud",
+        "board/war/replacement/eliminate/all/Tank Tactics.lud"
+    ],
+    "board/sow/two_rows/Duene.lud": [
+        "board/sow/two_rows/Qelat (Beni Amir-Mensa).lud",
+        "board/sow/two_rows/FairKalah.lud",
+        "board/sow/two_rows/Foji.lud"
+    ],
+    "board/sow/two_rows/Yovodi.lud": [
+        "board/sow/two_rows/Sungka.lud",
+        "board/sow/two_rows/I Pere.lud",
+        "board/sow/two_rows/Chongka'.lud"
+    ],
+    "board/sow/four_rows/Chiana wa Kunja.lud": [
+        "board/sow/four_rows/Chiana wa Bwalo.lud",
+        "board/sow/four_rows/Njombwa (Two Counters).lud",
+        "board/sow/four_rows/Ngolo.lud"
+    ],
+    "board/war/leaping/lines/Tsukkalavde.lud": [
+        "board/war/leaping/lines/Satoel.lud",
+        "board/war/leaping/lines/La Dama.lud",
+        "board/war/leaping/lines/Kharberg.lud"
+    ],
+    "experimental/Wrigglers Squared.lud": [
+        "experimental/Breakthrough Chess.lud",
+        "experimental/Faraday.lud",
+        "experimental/Branching Coral.lud"
+    ],
+    "board/race/escape/Kiz Tavlasi.lud": [
+        "board/race/escape/Los Doze Canes.lud",
+        "board/race/escape/Ludus Anglicorum.lud",
+        "board/race/escape/Pancha Keliya.lud"
+    ],
+    "board/space/connection/ConHex.lud": [
+        "board/space/connection/Unlur.lud",
+        "board/space/connection/Onyx.lud",
+        "board/space/connection/Trax.lud"
+    ],
+    "board/space/connection/Pippinzip (Zipline variant).lud": [
+        "board/space/connection/Trax.lud",
+        "board/space/connection/DuploHex.lud",
+        "board/space/connection/ConHex.lud"
+    ],
+    "board/space/line/Minefield.lud": [
+        "board/space/line/Sam K'i.lud",
+        "board/space/line/Xonin Shatar (Complex).lud",
+        "board/space/line/La Chascona.lud"
+    ]
+}

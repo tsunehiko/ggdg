@@ -1,0 +1,1710 @@
+game : match
+    | "(game" string ")"
+    | "(game" string players mode? equipment rules_rules ")"
+players : "(players" int ")"
+    | "(players" "{"? players_player+ "}"? ")"
+players_player : "(player" direction_facing ")"
+dominoes : "(dominoes" ("upTo:" int)? ")"
+hints : "(hints" string? "{"? equipment_hint+ "}"? site_type? ")"
+map : "(map" string? "{"? math_pair+ "}"? ")"
+    | "(map" string? int_set int_set ")"
+regions : "(regions" string? role_type? (int_set | sites | "{"? sites+ "}"? | region_type_static | "{"? region_type_static+ "}"?) string? ")"
+container_board_board : boardless
+    | surakarta_board
+    | "(board" graph (board_track | "{"? board_track+ "}"?)? (equipment_values | "{"? equipment_values+ "}"?)? ("use:" site_type)? ("largeStack:" boolean)? ")"
+    | mancala_board
+board_track : "(track" string (int_set | string) ("loop:" boolean)? (int | role_type)? ("directed:" boolean)? ")"
+boardless : "(boardless" tiling_boardless_type dim? ("largeStack:" boolean)? ")"
+mancala_board : "(mancalaBoard" int int ("store:" store_type)? ("numStores:" int)? ("largeStack:" boolean)? (board_track | "{"? board_track+ "}"?)? ")"
+surakarta_board : "(surakartaBoard" graph ("loops:" int)? ("from:" int)? ("largeStack:" boolean)? ")"
+effect : bet
+    | promote
+    | effect_step
+    | while
+    | enclose
+    | leap
+    | effect_add
+    | vote
+    | flip
+    | max_max
+    | pass
+    | priority
+    | intervene
+    | forget
+    | slide
+    | effect_deal
+    | note
+    | effect_set_set
+    | propose
+    | roll
+    | attract
+    | trigger
+    | shoot
+    | first_move_on_track
+    | swap
+    | remember
+    | select
+    | operators_foreach_for_each
+    | hop
+    | play_card
+    | move_again
+    | directional
+    | do
+    | from_to
+    | satisfy
+    | claim
+    | surround
+    | seq
+    | push
+    | avoid_stored_state
+    | take
+    | custodial
+    | effect_remove
+    | sow
+    | add_score
+apply : "(apply" non_decision ")"
+    | "(apply" "if:" boolean ")"
+    | "(apply" "if:" boolean non_decision ")"
+attract : "(attract" moves_from? absolute_direction? then? ")"
+bet : "(bet" (moves_player | role_type) range then? ")"
+claim : "(claim" moves_piece? moves_to then? ")"
+custodial : "(custodial" moves_from? absolute_direction? moves_between? moves_to? then? ")"
+directional : "(directional" moves_from? direction? moves_to? then? ")"
+effect_add : "(add" moves_piece? moves_to ("count:" int)? ("stack:" boolean)? then? ")"
+effect_deal : "(deal" dealable_type int? ("beginWith:" int)? then? ")"
+effect_remove : "(remove" site_type? (int | sites) ("level:" int)? ("at:" when_type)? ("count:" int)? then? ")"
+effect_step : "(step" moves_from? direction? moves_to ("stack:" boolean)? then? ")"
+enclose : "(enclose" site_type? moves_from? direction? moves_between? ("numException:" int)? then? ")"
+flip : "(flip" site_type? int? then? ")"
+from_to : "(fromTo" moves_from moves_to ("count:" int)? ("copy:" boolean)? ("stack:" boolean)? role_type? then? ")"
+hop : "(hop" moves_from? direction? moves_between? moves_to ("stack:" boolean)? then? ")"
+intervene : "(intervene" moves_from? absolute_direction? moves_between? moves_to? then? ")"
+leap : "(leap" moves_from? "{"? step_type_set+ "}"? ("forward:" boolean)? ("rotations:" boolean)? moves_to then? ")"
+note : "(note" ("player:" int | "player:" role_type)? (string | int | ints | float | boolean | sites | range | direction | graph) ("to:" moves_player | "to:" role_type)? ")"
+pass : "(pass" then? ")"
+play_card : "(playCard" then? ")"
+promote : "(promote" site_type? int? moves_piece (moves_player | role_type)? then? ")"
+propose : "(propose" (string | "{"? string+ "}"?) then? ")"
+push : "(push" moves_from? direction then? ")"
+random : "(random" moves "num:" int ")"
+    | "(random" float_set "{"? moves+ "}"? ")"
+roll : "(roll" then? ")"
+satisfy : "(satisfy" (boolean | "{"? boolean+ "}"?) ")"
+select : "(select" moves_from moves_to? role_type? then? ")"
+shoot : "(shoot" moves_piece moves_from? absolute_direction? moves_between? moves_to? then? ")"
+slide : "(slide" moves_from? string? direction? moves_between? moves_to? ("stack:" boolean)? then? ")"
+sow : "(sow" site_type? int? ("count:" int)? ("numPerHole:" int)? string? ("owner:" int)? ("if:" boolean)? ("sowEffect:" moves)? ("apply:" non_decision)? ("includeSelf:" boolean)? ("origin:" boolean)? ("skipIf:" boolean)? ("backtracking:" boolean | "forward:" boolean)? then? ")"
+surround : "(surround" moves_from? relation_type? moves_between? moves_to? ("except:" int)? ("with:" moves_piece)? then? ")"
+then : "(then" non_decision ("applyAfterAllMoves:" boolean)? ")"
+trigger : "(trigger" string (int | role_type) then? ")"
+vote : "(vote" (string | "{"? string+ "}"?) then? ")"
+moves : bet
+    | promote
+    | effect_step
+    | apply
+    | while
+    | all_combinations
+    | enclose
+    | leap
+    | effect_add
+    | logical_if
+    | vote
+    | flip
+    | max_max
+    | effect
+    | pass
+    | intervene
+    | priority
+    | forget
+    | slide
+    | effect_deal
+    | note
+    | effect_set_set
+    | propose
+    | roll
+    | attract
+    | non_decision
+    | trigger
+    | shoot
+    | logical_and
+    | first_move_on_track
+    | swap
+    | remember
+    | move
+    | select
+    | operators_foreach_for_each
+    | logical_or
+    | hop
+    | operator
+    | move_again
+    | play_card
+    | directional
+    | do
+    | from_to
+    | satisfy
+    | claim
+    | decision
+    | surround
+    | seq
+    | push
+    | append
+    | avoid_stored_state
+    | take
+    | custodial
+    | random
+    | effect_remove
+    | sow
+    | add_score
+decision : move
+move : "(move" SWAP PIECES int? int? then? ")"
+    | "(move" SELECT moves_from moves_to? role_type? then? ")"
+    | "(move" move_message_type (string | "{"? string+ "}"?) then? ")"
+    | "(move" SWAP PLAYERS (int | role_type) (int | role_type) then? ")"
+    | "(move" LEAP moves_from? "{"? step_type_set+ "}"? ("forward:" boolean)? ("rotations:" boolean)? moves_to then? ")"
+    | "(move" SET ROTATION moves_to? (int_set | int)? ("previous:" boolean)? ("next:" boolean)? then? ")"
+    | "(move" SET TRUMPSUIT (int | int_array_math_difference) then? ")"
+    | "(move" move_simple_type then? ")"
+    | "(move" HOP moves_from? direction? moves_between? moves_to ("stack:" boolean)? then? ")"
+    | "(move" PROMOTE site_type? int? moves_piece (moves_player | role_type)? then? ")"
+    | "(move" SET NEXTPLAYER (moves_player | ints) then? ")"
+    | "(move" REMOVE site_type? (int | sites) ("level:" int)? ("at:" when_type)? ("count:" int)? then? ")"
+    | "(move" moves_from moves_to ("count:" int)? ("copy:" boolean)? ("stack:" boolean)? role_type? then? ")"
+    | "(move" move_site_type moves_piece? moves_to ("count:" int)? ("stack:" boolean)? then? ")"
+    | "(move" SLIDE moves_from? string? direction? moves_between? moves_to? ("stack:" boolean)? then? ")"
+    | "(move" BET (moves_player | role_type) range then? ")"
+    | "(move" STEP moves_from? direction? moves_to ("stack:" boolean)? then? ")"
+    | "(move" SHOOT moves_piece moves_from? absolute_direction? moves_between? moves_to? then? ")"
+move_message_type : PROPOSE
+    | VOTE
+move_simple_type : PLAYCARD
+    | PASS
+move_site_type : ADD
+    | CLAIM
+non_decision : effect
+    | operator
+avoid_stored_state : "(avoidStoredState" moves then? ")"
+do : "(do" moves ("next:" moves)? ("ifAfterwards:" boolean)? then? ")"
+first_move_on_track : "(firstMoveOnTrack" string? role_type? moves then? ")"
+priority : "(priority" moves moves then? ")"
+    | "(priority" "{"? moves+ "}"? then? ")"
+while : "(while" boolean moves then? ")"
+max_max : "(max" DISTANCE string? role_type? moves then? ")"
+    | "(max" max_moves_type ("withValue:" boolean)? moves then? ")"
+max_moves_type : MOVES
+    | CAPTURES
+effect_set_set : "(set" set_player_type (moves_player | role_type) int then? ")"
+    | "(set" TRUMPSUIT (int | int_array_math_difference) then? ")"
+    | "(set" ROTATION moves_to? (int_set | int)? ("previous:" boolean)? ("next:" boolean)? then? ")"
+    | "(set" TEAM int "{"? role_type+ "}"? then? ")"
+    | "(set" VAR string? int? then? ")"
+    | "(set" NEXTPLAYER (moves_player | ints) then? ")"
+    | "(set" set_value_type int? then? ")"
+    | "(set" HIDDEN (hidden_data | "{"? hidden_data+ "}"?)? site_type? ("at:" int | sites) ("level:" int)? boolean? ("to:" moves_player | "to:" role_type) then? ")"
+    | "(set" PENDING (int | sites)? then? ")"
+    | "(set" set_site_type site_type? "at:" int ("level:" int)? int then? ")"
+set_player_type : SCORE
+    | VALUE
+set_site_type : VALUE
+    | COUNT
+    | STATE
+set_value_type : POT
+    | COUNTER
+add_score : "(addScore" (moves_player | role_type) int then? ")"
+    | "(addScore" (int_set | "{"? role_type+ "}"?) int_set then? ")"
+move_again : "(moveAgain" then? ")"
+forget : "(forget" VALUE string? ALL then? ")"
+    | "(forget" VALUE string? int then? ")"
+remember : "(remember" STATE then? ")"
+    | "(remember" VALUE string? int ("unique:" boolean)? then? ")"
+swap : "(swap" PIECES (int int)? then? ")"
+    | "(swap" PLAYERS (int | role_type) (int | role_type) then? ")"
+take : "(take" DOMINO then? ")"
+    | "(take" CONTROL ("of:" role_type | "of:" int) ("by:" role_type | "by:" int) ("at:" int | "to:" sites)? site_type? then? ")"
+operators_foreach_for_each : "(forEach" GROUP site_type? direction? ("if:" boolean)? moves then? ")"
+    | "(forEach" SITE sites moves ("noMoveYet:" moves)? then? ")"
+    | "(forEach" LEVEL site_type? int stack_direction? moves then? ")"
+    | "(forEach" TEAM moves then? ")"
+    | "(forEach" DIE int? ("combined:" boolean)? ("replayDouble:" boolean)? ("if:" boolean)? moves then? ")"
+    | "(forEach" VALUE ints moves then? ")"
+    | "(forEach" DIRECTION moves_from? direction? moves_between? (moves_to | moves) then? ")"
+    | "(forEach" ints moves then? ")"
+    | "(forEach" VALUE "min:" int "max:" int moves then? ")"
+    | "(forEach" PIECE ("on:" site_type)? (string | "{"? string+ "}"?)? ("container:" int | string)? moves? (moves_player | role_type)? ("top:" boolean)? then? ")"
+    | "(forEach" PLAYER moves then? ")"
+operator : all_combinations
+    | logical_or
+    | append
+    | logical_if
+    | logical_and
+all_combinations : "(allCombinations" moves moves then? ")"
+append : "(append" non_decision then? ")"
+logical_and : "(and" "{"? moves+ "}"? then? ")"
+    | "(and" moves moves then? ")"
+logical_if : "(if" boolean moves moves? then? ")"
+logical_or : "(or" "{"? moves+ "}"? then? ")"
+    | "(or" moves moves then? ")"
+phase_phase : "(phase" string role_type? mode? play end? (next_phase | "{"? next_phase+ "}"?)? ")"
+next_phase : "(nextPhase" (role_type | moves_player)? boolean? string? ")"
+mode : "(mode" mode_type ")"
+equipment : "(equipment" "{"? item+ "}"? ")"
+item : regions
+    | hints
+    | dominoes
+    | component
+    | map
+    | container
+component : tile
+    | domino
+    | component_piece
+    | die
+    | component_card
+    | "(component" string role_type "{"? step_type_set+ "}"? direction_facing moves int int int ")"
+component_card : "(card" string role_type card_type "rank:" int "value:" int "trumpRank:" int "trumpValue:" int "suit:" int moves? ("maxState:" int)? ("maxCount:" int)? ("maxValue:" int)? ")"
+component_piece : "(piece" string role_type? direction_facing? flips? moves? ("maxState:" int)? ("maxCount:" int)? ("maxValue:" int)? ")"
+die : "(die" string role_type "numFaces:" int direction_facing? moves? ")"
+tile : "(tile" string role_type? ("{"? step_type+ "}"? | "{"? step_type_set+ "}"?)? ("numSides:" int)? ("slots:" int_set | "slotsPerSide:" int)? ("{"? path+ "}"?)? flips? moves? ("maxState:" int)? ("maxCount:" int)? ("maxValue:" int)? ")"
+domino : "(domino" string role_type "value:" int "value2:" int moves? ")"
+path : "(path" "from:" int ("slotsFrom:" int)? "to:" int ("slotsTo:" int)? "colour:" int ")"
+container : dice
+    | deck
+    | other_hand
+    | container_board_board
+deck : "(deck" role_type? ("cardsBySuit:" int)? ("suits:" int)? ("{"? equipment_card+ "}"?)? ")"
+dice : "(dice" ("d:" int)? ("faces:" "{"? int+ "}"? | "facesByDie:" "{"? int_set+ "}"? | "from:" int)? role_type? "num:" int ("biased:" "{"? int+ "}"?)? ")"
+other_hand : "(hand" role_type ("size:" int)? ")"
+rules_rules : "(rules" meta? start? play end ")"
+    | "(rules" meta? start? play? "phases:" "{"? phase_phase+ "}"? end? ")"
+meta : "(meta" ("{"? meta_rule+ "}"? | meta_rule) ")"
+automove : "(automove)"
+gravity : "(gravity" "PyramidalDrop"? ")"
+meta_swap : "(swap)"
+meta_rule : gravity
+    | pin
+    | pass_end
+    | automove
+    | meta_swap
+    | meta_no_no
+pass_end : "(passEnd" pass_end_type ")"
+pin : "(pin" SUPPORTMULTIPLE ")"
+meta_no_no : "(no" SUICIDE ")"
+    | "(no" REPEAT repetition_type? ")"
+start : "(start" ("{"? start_rule+ "}"? | start_rule) ")"
+start_deal : "(deal" dealable_type int? ")"
+start_rule : start_deal
+    | place
+    | for_each_for_each
+    | split
+    | deduction_puzzle_set
+    | start_set_set
+deduction_puzzle_set : "(set" site_type? "{"? int_set+ "}"? ")"
+for_each_for_each : "(forEach" TEAM start_rule ")"
+    | "(forEach" VALUE "min:" int "max:" int start_rule ")"
+    | "(forEach" SITE sites ("if:" boolean)? start_rule ")"
+    | "(forEach" ints start_rule ")"
+    | "(forEach" PLAYER start_rule ")"
+place : "(place" RANDOM "{"? math_count+ "}"? int site_type? ")"
+    | "(place" string site_type? int_set? sites? ("{"? string+ "}"?)? ("counts:" "{"? int+ "}"?)? ("state:" int)? ("rotation:" int)? ("value:" int)? ")"
+    | "(place" string string? site_type? int? ("coord:" string)? ("count:" int)? ("state:" int)? ("rotation:" int)? ("value:" int)? ")"
+    | "(place" STACK (string | "items:" "{"? string+ "}"?) string? site_type? (int | int_set | sites | "coord:" string | "{"? string+ "}"?)? ("count:" int | "counts:" int_set)? ("state:" int)? ("rotation:" int)? ("value:" int)? ")"
+    | "(place" RANDOM "{"? string+ "}"? ("count:" int_set)? ("state:" int)? ("value:" int)? int site_type? ")"
+    | "(place" RANDOM sites? "{"? string+ "}"? ("count:" int)? ("state:" int)? ("value:" int)? site_type? ")"
+start_set_set : "(set" REMEMBERVALUE string? (int | sites) ("unique:" boolean)? ")"
+    | "(set" role_type site_type? int_set? sites? ("{"? string+ "}"?)? ")"
+    | "(set" set_start_sites_type int site_type? ("at:" int | "to:" sites) ")"
+    | "(set" TEAM int "{"? role_type+ "}"? ")"
+    | "(set" set_start_player_type role_type? int ")"
+    | "(set" HIDDEN (hidden_data | "{"? hidden_data+ "}"?)? site_type? ("at:" int | sites) ("level:" int)? boolean? "to:" role_type ")"
+    | "(set" role_type site_type? int? ("coord:" string)? ")"
+set_start_player_type : AMOUNT
+    | SCORE
+set_start_sites_type : PHASE
+    | COUNT
+    | COST
+split : "(split" DECK ")"
+play : "(play" moves ")"
+end : "(end" (end_rule | "{"? end_rule+ "}"?) ")"
+by_score : "(byScore" ("{"? end_score+ "}"?)? ("misere:" boolean)? ")"
+end_for_each : "(forEach" (role_type | "Track")? "if:" boolean result ")"
+end_if : "(if" boolean (end_if | "{"? end_if+ "}"?)? result? ")"
+end_rule : end_if
+    | end_for_each
+payoffs : "(payoffs" "{"? payoff+ "}"? ")"
+result : "(result" role_type result_type ")"
+    | by_score
+    | payoffs
+match : "(match" string ")"
+    | "(match" string players? games end ")"
+games : "(games" (subgame | "{"? subgame+ "}"?) ")"
+subgame : "(subgame" string string? ("next:" int)? ("result:" int)? ")"
+was : "(was" PASS ")"
+booleans_no_no : "(no" MOVES role_type ")"
+    | "(no" PIECES site_type? (role_type | "of:" int)? string? ("in:" sites)? ")"
+not_equal_to : "(!=" int (int | role_type) ")"
+    | "(!=" sites sites ")"
+less_than : "(<" int int ")"
+less_than_or_equal_to : "(<=" int int ")"
+equal_to : "(=" sites sites ")"
+    | "(=" int (int | role_type) ")"
+greater_than : "(>" int int ")"
+greater_than_or_equal_to : "(>=" int int ")"
+booleans_math_if : "(if" boolean boolean boolean? ")"
+math_and : "(and" "{"? boolean+ "}"? ")"
+    | "(and" boolean boolean ")"
+math_or : "(or" "{"? boolean+ "}"? ")"
+    | "(or" boolean boolean ")"
+not : "(not" boolean ")"
+xor : "(xor" boolean boolean ")"
+booleans_is_is : "(is" is_simple_type ")"
+    | "(is" is_connect_type int? site_type? ("at:" int)? direction? ("{"? sites+ "}"? | role_type | region_type_static) ")"
+    | "(is" REPEAT repetition_type? ")"
+    | "(is" PATTERN step_type_set site_type? ("from:" int)? ("what:" int | "whats:" int_set)? ")"
+    | "(is" is_tree_type (moves_player | role_type) ")"
+    | "(is" is_player_type (int | role_type) ")"
+    | "(is" RELATED relation_type site_type? int (int | sites) ")"
+    | "(is" is_string_type string ")"
+    | "(is" is_graph_type site_type ")"
+    | "(is" TRIGGERED string (int | role_type) ")"
+    | "(is" PATH site_type ("from:" int)? (moves_player | role_type) "length:" range ("closed:" boolean)? ")"
+    | "(is" LOOP site_type? ("surround:" role_type | "{"? role_type+ "}"?)? direction? int? (int | sites)? ("path:" boolean)? ")"
+    | "(is" is_site_type site_type? int ")"
+    | "(is" REGULARGRAPH (moves_player | role_type) ("k:" int | "odd:" boolean | "even:" boolean)? ")"
+    | "(is" is_integer_type int? ")"
+    | "(is" IN (int | int_set)? (sites | ints) ")"
+    | "(is" is_component_type int? site_type? ("at:" int | "in:" sites)? moves? ")"
+    | "(is" CROSSING int int ")"
+    | "(is" LINE site_type? int absolute_direction? ("through:" int | "throughAny:" sites)? (role_type | "what:" int | "whats:" int_set)? ("exact:" boolean)? ("contiguous:" boolean)? ("if:" boolean)? ("byLevel:" boolean)? ")"
+    | "(is" TARGET (int | string)? int_set (int | int_set)? ")"
+    | "(is" HIDDEN hidden_data? site_type? "at:" int ("level:" int)? ("to:" moves_player | "to:" role_type) ")"
+is_component_type : THREATENED
+    | WITHIN
+is_connect_type : BLOCKED
+    | CONNECTED
+is_graph_type : LASTFROM
+    | LASTTO
+is_integer_type : ANYDIE
+    | SIDESMATCH
+    | ODD
+    | EVEN
+    | PIPSMATCH
+    | VISITED
+    | FLAT
+is_player_type : MOVER
+    | FRIEND
+    | NEXT
+    | PREV
+    | ENEMY
+    | ACTIVE
+is_simple_type : FULL
+    | CYCLE
+    | PENDING
+is_site_type : EMPTY
+    | OCCUPIED
+is_string_type : PROPOSED
+    | DECIDED
+is_tree_type : CATERPILLARTREE
+    | TREECENTRE
+    | TREE
+    | SPANNINGTREE
+deduction_puzzle_is_is : "(is" SOLVED ")"
+    | "(is" is_puzzle_region_result_type site_type? sites? ("of:" int)? string? int ")"
+    | "(is" UNIQUE site_type? ")"
+is_puzzle_region_result_type : SUM
+    | COUNT
+deduction_puzzle_all_all : "(all" DIFFERENT site_type? sites? ("except:" int | "excepts:" int_set)? ")"
+for_all : "(forAll" puzzle_element_type boolean ")"
+can : "(can" MOVE moves ")"
+booleans_all_all : "(all" all_simple_type ")"
+    | "(all" all_sites_type sites "if:" boolean ")"
+    | "(all" VALUES ints "if:" boolean ")"
+    | "(all" GROUPS site_type? direction? ("of:" boolean)? "if:" boolean ")"
+all_simple_type : DICEEQUAL
+    | PASSED
+    | DICEUSED
+all_sites_type : SITES
+    | DIFFERENT
+value : "(value" RANDOM range ")"
+    | "(value)"
+    | "(value" PLAYER (int | role_type) ")"
+    | "(value" value_simple_type ")"
+    | "(value" PIECE site_type? "at:" int ("level:" int)? ")"
+value_simple_type : MOVELIMIT
+    | TURNLIMIT
+    | PENDING
+track_site : "(trackSite" ENDSITE (moves_player | role_type)? string? ")"
+    | "(trackSite" MOVE ("from:" int)? (role_type | moves_player | string)? "steps:" int ")"
+    | "(trackSite" FIRSTSITE (moves_player | role_type)? string? ("from:" int)? ("if:" boolean)? ")"
+path_extent : "(pathExtent" int? (int | sites)? ")"
+state : "(state" site_type? "at:" int ("level:" int)? ")"
+amount : "(amount" (role_type | moves_player) ")"
+counter : "(counter)"
+mover : "(mover)"
+next : "(next)"
+pot : "(pot)"
+prev : "(prev" prev_type? ")"
+rotation : "(rotation" site_type? "at:" int ("level:" int)? ")"
+state_score : "(score" (moves_player | role_type) ")"
+var : "(var" string? ")"
+what : "(what" site_type? "at:" int ("level:" int)? ")"
+who : "(who" site_type? "at:" int ("level:" int)? ")"
+top_level : "(topLevel" site_type? "at:" int ")"
+size : "(size" LARGEPIECE site_type? ("in:" sites | "at:" int) ")"
+    | "(size" TERRITORY site_type? (role_type | moves_player) absolute_direction? ")"
+    | "(size" ARRAY ints ")"
+    | "(size" GROUP site_type? "at:" int direction? ("if:" boolean)? ")"
+    | "(size" STACK site_type? ("in:" sites | "at:" int)? ")"
+percent : "(%" int int ")"
+ints_math_times : "(*" (int_set | ints) ")"
+    | "(mul" (int_set | ints) ")"
+    | "(mul" int int ")"
+    | "(*" int int ")"
+ints_math_plus : "(+" (int_set | ints) ")"
+    | "(+" int int ")"
+ints_math_minus : "(-" int? int ")"
+ints_math_div : "(/" int int ")"
+ints_math_pow : "(^" int int ")"
+    | "(pow" int int ")"
+ints_math_abs : "(abs" int ")"
+ints_math_if : "(if" boolean int int ")"
+ints_math_max : "(max" ints ")"
+    | "(max" int int ")"
+ints_math_min : "(min" int int ")"
+    | "(min" ints ")"
+match_score : "(matchScore" role_type ")"
+ints_last_last : "(last" last_type ("afterConsequence:" boolean)? ")"
+last_type : TO
+    | LEVELFROM
+    | FROM
+    | LEVELTO
+iterator_between : "(between)"
+iterator_edge : "(edge" int int ")"
+    | "(edge)"
+iterator_from : "(from" ("at:" when_type)? ")"
+iterator_hint : INT_CONSTANT
+    | "(hint" site_type? ("at:" int)? ")"
+iterator_player : "(player)"
+iterator_to : "(to)"
+iterator_track : "(track)"
+level : "(level)"
+pips : "(pips)"
+site : "(site)"
+dice_face : "(face" int ")"
+count_count : "(count" count_component_type site_type? (role_type | "of:" int)? string? ("in:" sites)? ("if:" boolean)? ")"
+    | "(count" STEPSONTRACK (role_type | moves_player | string)? int? int? ")"
+    | "(count" STACK stack_direction? site_type? ("at:" int | "to:" sites) ("if:" boolean)? ("stop:" boolean)? ")"
+    | "(count" VALUE int "in:" ints ")"
+    | "(count" count_simple_type site_type? ")"
+    | "(count" STEPS site_type? relation_type? effect_step? ("newRotation:" int)? int (int | sites) ")"
+    | "(count" count_site_type? site_type? ("in:" sites | "at:" int | string)? ")"
+    | "(count" GROUPS site_type? direction? ("if:" boolean)? ("min:" int)? ")"
+    | "(count" LIBERTIES site_type? ("at:" int)? direction? ("if:" boolean)? ")"
+count_component_type : PIECES
+    | PIPS
+count_simple_type : LEGALMOVES
+    | PHASES
+    | PLAYERS
+    | ROWS
+    | MOVESTHISTURN
+    | TRIALS
+    | EDGES
+    | TURNS
+    | CELLS
+    | VERTICES
+    | MOVES
+    | ACTIVE
+    | COLUMNS
+count_site_type : OFF
+    | DIAGONAL
+    | NEIGHBOURS
+    | ADJACENT
+    | ORTHOGONAL
+    | SITES
+card_card : "(card" card_site_type "at:" int ("level:" int)? ")"
+    | "(card" TRUMPSUIT ")"
+card_site_type : SUIT
+    | TRUMPRANK
+    | RANK
+    | TRUMPVALUE
+where : "(where" LEVEL int site_type? "at:" int ("fromTop:" boolean)? ")"
+    | "(where" string (int | role_type) ("state:" int)? site_type? ")"
+    | "(where" int site_type? ")"
+    | "(where" LEVEL string (int | role_type) ("state:" int)? site_type? "at:" int ("fromTop:" boolean)? ")"
+sites : "(sites" START moves_piece ")"
+    | "(sites" OCCUPIED ("by:" moves_player | "by:" role_type) ("container:" int | "container:" string)? ("component:" int | "component:" string | "components:" "{"? string+ "}"?)? ("top:" boolean)? ("on:" site_type)? ")"
+    | "(sites" sites_edge_type ")"
+    | "(sites" SIDE site_type? (moves_player | role_type | compass_direction)? ")"
+    | "(sites" LARGEPIECE site_type? "at:" int ")"
+    | region_last_last
+    | "(sites" site_type? "{"? string+ "}"? ")"
+    | "(sites" sites_simple_type site_type? ")"
+    | "(sites" BETWEEN direction? site_type? "from:" int ("fromIncluded:" boolean)? "to:" int ("toIncluded:" boolean)? ("cond:" boolean)? ")"
+    | "(sites" sites_move_type moves ")"
+    | "(region)"
+    | "(sites" TRACK (moves_player | role_type)? string? ("from:" int)? ("to:" int)? ")"
+    | expand
+    | region_math_if
+    | "(sites" site_type? int? "{"? step_type_set+ "}"? ("rotations:" boolean)? ")"
+    | "(sites" PATTERN step_type_set site_type? ("from:" int)? ("what:" int | "whats:" int_set)? ")"
+    | "(sites)"
+    | "(sites" RANDOM sites? ("num:" int)? ")"
+    | "(sites" LOOP ("inside:" boolean)? site_type? ("surround:" role_type | "{"? role_type+ "}"?)? direction? int? (int | sites)? ")"
+    | "(sites" (moves_player | role_type)? site_type? string? ")"
+    | "(sites" sites_index_type site_type? int? ")"
+    | region_math_union
+    | "(sites" LINEOFSIGHT line_of_sight_type? site_type? ("at:" int)? direction? ")"
+    | "(sites" DIRECTION ("from:" int | "from:" sites) direction? ("included:" boolean)? ("stop:" boolean)? ("stopIncluded:" boolean)? ("distance:" int)? site_type? ")"
+    | "(sites" (int_set | ints) ")"
+    | region_foreach_for_each
+    | "(sites" GROUP site_type? ("at:" int | "from:" sites) direction? ("if:" boolean)? ")"
+    | "(sites" INCIDENT site_type "of:" site_type "at:" int ("owner:" moves_player | role_type)? ")"
+    | "(sites" sites_player_type site_type? (moves_player | role_type)? non_decision? string? ")"
+    | region_math_difference
+    | "(sites" CROSSING "at:" int (moves_player | role_type)? ")"
+    | "(sites" AROUND site_type? (int | sites) region_type_dynamic? ("distance:" int)? absolute_direction? ("if:" boolean)? ("includeSelf:" boolean)? ")"
+    | region_math_intersection
+    | "(sites" DISTANCE site_type? relation_type? effect_step? ("newRotation:" int)? "from:" int range ")"
+    | "(sites" HIDDEN hidden_data? site_type? ("to:" moves_player | "to:" role_type) ")"
+line_of_sight_type : EMPTY
+    | PIECE
+    | FARTHEST
+sites_edge_type : HORIZONTAL
+    | VERTICAL
+    | SLOSH
+    | AXIAL
+    | SLASH
+    | ANGLED
+sites_index_type : CELL
+    | STATE
+    | ROW
+    | COLUMN
+    | LAYER
+    | PHASE
+    | EMPTY
+    | EDGE
+sites_move_type : TO
+    | FROM
+    | BETWEEN
+sites_player_type : HAND
+    | WINNING
+sites_simple_type : MAJOR
+    | CORNERS
+    | PERIMETER
+    | OUTER
+    | CONVEXCORNERS
+    | LASTTO
+    | LASTFROM
+    | MINOR
+    | BOARD
+    | CENTRE
+    | PENDING
+    | LEFT
+    | TOP
+    | RIGHT
+    | LINEOFPLAY
+    | INNER
+    | TOCLEAR
+    | CONCAVECORNERS
+    | PLAYABLE
+    | BOTTOM
+    | HINT
+expand : "(expand" (int | string)? (sites | "origin:" int) ("steps:" int)? absolute_direction? site_type? ")"
+region_math_difference : "(difference" sites (sites | int) ")"
+region_math_if : "(if" boolean sites sites? ")"
+region_math_intersection : "(intersection" sites sites ")"
+    | "(intersection" "{"? sites+ "}"? ")"
+region_math_union : "(union" sites sites ")"
+    | "(union" "{"? sites+ "}"? ")"
+region_last_last : "(last" BETWEEN ")"
+region_foreach_for_each : "(forEach" ints sites ")"
+    | "(forEach" TEAM sites ")"
+    | "(forEach" "of:" sites sites ")"
+    | "(forEach" LEVEL site_type? "at:" int stack_direction? ("if:" boolean)? ("startAt:" int)? ")"
+    | "(forEach" sites "if:" boolean ")"
+exact : "(exact" int ")"
+range_math_max : "(max" int ")"
+range_math_min : "(min" int ")"
+range : exact
+    | range_math_min
+    | range_math_max
+    | "(range" int int? ")"
+clip : "(clip" graph poly ")"
+complete : "(complete" graph ("eachCell:" boolean)? ")"
+dual : "(dual" graph ")"
+hole : "(hole" graph poly ")"
+intersect : "(intersect" "{"? graph+ "}"? ")"
+    | "(intersect" graph graph ")"
+keep : "(keep" graph poly ")"
+layers : "(layers" dim graph ")"
+make_faces : "(makeFaces" graph ")"
+merge : "(merge" "{"? graph+ "}"? ("connect:" boolean)? ")"
+    | "(merge" graph graph ("connect:" boolean)? ")"
+operators_add : "(add" graph? ("vertices:" "{"? float_set+ "}"?)? ("edges:" "{"? float_set_set+ "}"? | "edges:" "{"? dim_set+ "}"?)? ("edgesCurved:" "{"? float_set_set+ "}"?)? ("cells:" "{"? float_set_set+ "}"? | "cells:" "{"? dim_set+ "}"?)? ("connect:" boolean)? ")"
+operators_remove : "(remove" graph ("cells:" "{"? float_set_set+ "}"? | "cells:" "{"? dim+ "}"?)? ("edges:" "{"? float_set_set+ "}"? | "edges:" "{"? dim_set+ "}"?)? ("vertices:" "{"? float_set+ "}"? | "vertices:" "{"? dim+ "}"?)? ("trimEdges:" boolean)? ")"
+    | "(remove" graph poly ("trimEdges:" boolean)? ")"
+operators_union : "(union" graph graph ("connect:" boolean)? ")"
+    | "(union" "{"? graph+ "}"? ("connect:" boolean)? ")"
+recoordinate : "(recoordinate" site_type? site_type? site_type? graph ")"
+renumber : "(renumber" site_type? site_type? site_type? graph ")"
+rotate : "(rotate" float graph ")"
+scale : "(scale" float float? float? graph ")"
+shift : "(shift" float float float? graph ")"
+skew : "(skew" float graph ")"
+split_crossings : "(splitCrossings" graph ")"
+subdivide : "(subdivide" graph ("min:" dim)? ")"
+trim : "(trim" graph ")"
+concentric : "(concentric" (concentric_shape_type | "sides:" dim | dim_set) ("rings:" dim)? ("steps:" dim)? ("midpoints:" boolean)? ("joinMidpoints:" boolean)? ("joinCorners:" boolean)? ("stagger:" boolean)? ")"
+concentric_shape_type : SQUARE
+    | TRIANGLE
+    | TARGET
+    | HEXAGON
+rectangle : "(rectangle" dim dim? ("diagonals:" diagonals_type)? ")"
+regular : "(regular" "Star"? dim ")"
+    | "(regular" basis_type shape_type dim dim? ")"
+repeat : "(repeat" dim dim "step:" float_set_set (poly | "{"? poly+ "}"?) ")"
+spiral : "(spiral" "turns:" dim "sites:" dim ("clockwise:" boolean)? ")"
+wedge : "(wedge" dim dim? ")"
+tri : "(tri" tri_shape_type? dim dim? ")"
+    | "(tri" (poly | dim_set) ")"
+tri_shape_type : RECTANGLE
+    | TRIANGLE
+    | NOSHAPE
+    | SQUARE
+    | DIAMOND
+    | PRISM
+    | LIMPING
+    | STAR
+    | HEXAGON
+tiling : "(tiling" tiling_type (poly | dim_set) ")"
+    | "(tiling" tiling_type dim dim? ")"
+tiling_type : T33336
+    | T3464
+    | T33344
+    | T33434
+    | T4612
+    | T488
+    | T31212
+    | T333333_33434
+    | T3636
+square : "(square" square_shape_type? dim ("diagonals:" diagonals_type | "pyramidal:" boolean)? ")"
+    | "(square" (poly | dim_set) ("diagonals:" diagonals_type)? ")"
+diagonals_type : ALTERNATING | CONCENTRIC | IMPLIED | RADIATING | SOLID | SOLIDNOSPLIT
+square_shape_type : RECTANGLE
+    | NOSHAPE
+    | SQUARE
+    | DIAMOND
+    | LIMPING
+quadhex : "(quadhex" dim ("thirds:" boolean)? ")"
+hex : "(hex" (poly | dim_set) ")"
+    | "(hex" hex_shape_type? dim dim? ")"
+hex_shape_type : RECTANGLE
+    | TRIANGLE
+    | NOSHAPE
+    | SQUARE
+    | DIAMOND
+    | PRISM
+    | LIMPING
+    | STAR
+    | HEXAGON
+celtic : "(celtic" (poly | dim_set) ")"
+    | "(celtic" dim dim? ")"
+brick : "(brick" brick_shape_type? dim dim? ("trim:" boolean)? ")"
+brick_shape_type : RECTANGLE
+    | SQUARE
+    | SPIRAL
+    | DIAMOND
+    | PRISM
+    | LIMPING
+basis : celtic
+    | spiral
+    | brick
+    | tri
+    | tiling
+    | wedge
+    | concentric
+    | quadhex
+    | square
+    | rectangle
+    | hex
+values_values : "(values" REMEMBERED string? ")"
+rotations : "(rotations" (absolute_direction | "{"? absolute_direction+ "}"?) ")"
+sizes : "(sizes" GROUP site_type? direction? (role_type | "of:" int | "if:" boolean)? ("min:" int)? ")"
+int_array_players_players : "(players" players_team_type ("if:" boolean)? ")"
+    | "(players" players_many_type ("of:" int)? ("if:" boolean)? ")"
+players_many_type : NONMOVER
+    | FRIEND
+    | ENEMY
+    | ALL
+    | ALLY
+players_team_type : TEAM8
+    | TEAM15
+    | TEAM11
+    | TEAM2
+    | TEAM5
+    | TEAM12
+    | TEAM13
+    | TEAM16
+    | TEAM6
+    | TEAM3
+    | TEAM1
+    | TEAM14
+    | TEAM4
+    | TEAM9
+    | TEAM7
+    | TEAM10
+int_array_math_difference : "(difference" ints (ints | int) ")"
+int_array_math_if : "(if" boolean ints ints? ")"
+int_array_math_intersection : "(intersection" ints ints ")"
+    | "(intersection" "{"? ints+ "}"? ")"
+int_array_math_union : "(union" "{"? ints+ "}"? ")"
+    | "(union" ints ints ")"
+results : "(results" ("from:" int | "from:" sites) ("to:" int | "to:" sites) int ")"
+team : "(team)"
+array : "(array" int_set ")"
+    | "(array" sites ")"
+ahead : "(ahead" site_type? int ("steps:" int)? direction? ")"
+array_value : "(arrayValue" ints "index:" int ")"
+board_id : "(id" string ")"
+    | "(id" string? role_type ")"
+board_phase : "(phase" site_type? "of:" int ")"
+centre_point : INT_CONSTANT
+    | "(centrePoint" site_type? ")"
+column : "(column" site_type? "of:" int ")"
+coord : "(coord" site_type? string ")"
+    | "(coord" site_type? "row:" int "column:" int ")"
+cost : "(cost" site_type? ("at:" int | "in:" sites) ")"
+hand_site : "(handSite" (int | role_type) int? ")"
+layer : "(layer" "of:" int site_type? ")"
+map_entry : "(mapEntry" string? (int | role_type) ")"
+region_site : "(regionSite" sites "index:" int ")"
+row : "(row" site_type? "of:" int ")"
+cos : "(cos" float ")"
+exp : "(exp" float ")"
+floats_math_times : "(mul" float float ")"
+    | "(mul" float_set ")"
+    | "(*" float_set ")"
+    | "(*" float float ")"
+floats_math_plus : "(+" float float ")"
+    | "(+" float_set ")"
+floats_math_minus : "(-" float float ")"
+floats_math_div : "(/" float float ")"
+floats_math_pow : "(^" float float ")"
+    | "(pow" float float ")"
+floats_math_abs : "(abs" float ")"
+floats_math_max : "(max" float float ")"
+    | "(max" float_set ")"
+floats_math_min : "(min" float_set ")"
+    | "(min" float float ")"
+log : "(log" float ")"
+log10 : "(log10" float ")"
+sin : "(sin" float ")"
+sqrt : "(sqrt" float ")"
+tan : "(tan" float ")"
+float : tan
+    | FLOAT_CONSTANT
+    | floats_math_minus
+    | sin
+    | floats_math_div
+    | floats_math_min
+    | floats_math_abs
+    | cos
+    | sqrt
+    | to_float
+    | exp
+    | floats_math_max
+    | floats_math_times
+    | floats_math_pow
+    | floats_math_plus
+    | log
+    | log10
+to_float : FLOAT_CONSTANT
+    | "(toFloat" (boolean | int) ")"
+dim_math_times : "(*" dim_set ")"
+    | "(*" dim dim ")"
+    | "(mul" dim_set ")"
+    | "(mul" dim dim ")"
+dim_math_plus : "(+" dim_set ")"
+    | "(+" dim dim ")"
+dim_math_minus : "(-" dim dim ")"
+dim_math_div : "(/" dim dim ")"
+dim_math_pow : "(pow" dim dim ")"
+    | "(^" dim dim ")"
+dim_math_abs : "(abs" dim ")"
+dim_math_max : "(max" dim dim ")"
+dim_math_min : "(min" dim dim ")"
+dim : dim_math_abs
+    | dim_math_max
+    | dim_math_minus
+    | dim_math_times
+    | dim_math_pow
+    | dim_math_plus
+    | ints
+    | dim_math_min
+    | int
+    | dim_math_div
+ints : regions
+    | int_set
+    | int_array_math_union
+    | team
+    | array
+    | rotations
+    | int_array_players_players
+    | results
+    | int_array_math_difference
+    | int_array_math_intersection
+    | values_values
+    | sizes
+    | int_array_math_if
+int : UNDEFINED
+    | centre_point
+    | ints_math_pow
+    | dim_math_minus
+    | board_id
+    | ints_math_min
+    | path_extent
+    | ints_math_abs
+    | ints_math_div
+    | dim_math_pow
+    | card_card
+    | counter
+    | level
+    | mover
+    | next_phase
+    | pot
+    | iterator_to
+    | array_value
+    | prev
+    | board_phase
+    | dim_math_abs
+    | state
+    | ints_math_max
+    | INT_CONSTANT
+    | cost
+    | iterator_from
+    | site
+    | END
+    | map_entry
+    | hand_site
+    | column
+    | row
+    | percent
+    | INFINITY
+    | count_count
+    | layer
+    | coord
+    | state_score
+    | dice_face
+    | ints_math_if
+    | OFF
+    | iterator_player
+    | dim_math_plus
+    | track_site
+    | ints_math_plus
+    | rotation
+    | amount
+    | size
+    | iterator_hint
+    | dim_math_div
+    | ints_last_last
+    | iterator_edge
+    | dim_math_max
+    | pips
+    | dim_math_times
+    | top_level
+    | next
+    | region_site
+    | where
+    | iterator_between
+    | iterator_track
+    | ints_math_times
+    | what
+    | dim_math_min
+    | value
+    | to_int
+    | ints_math_minus
+    | ahead
+    | var
+    | who
+    | match_score
+to_int : INT_CONSTANT
+    | "(toInt" (boolean | float) ")"
+boolean : less_than
+    | less_than_or_equal_to
+    | equal_to
+    | not_equal_to
+    | booleans_math_if
+    | xor
+    | deduction_puzzle_is_is
+    | math_or
+    | BOOLEAN_CONSTANT
+    | was
+    | booleans_all_all
+    | greater_than_or_equal_to
+    | for_all
+    | not
+    | booleans_is_is
+    | deduction_puzzle_all_all
+    | to_bool
+    | can
+    | math_and
+    | booleans_no_no
+    | greater_than
+to_bool : "(toBool" (int | float) ")"
+directions : "(directions" (relative_direction | "{"? relative_direction+ "}"?)? ("of:" relation_type)? ("bySite:" boolean)? ")"
+    | "(directions" RANDOM direction "num:" int ")"
+    | "(directions" site_type "from:" int "to:" int ")"
+    | "(directions" (absolute_direction | "{"? absolute_direction+ "}"?) ")"
+directions_difference : "(difference" direction direction ")"
+directions_if : "(if" boolean direction direction ")"
+directions_union : "(union" direction direction ")"
+end_score : "(score" role_type int ")"
+payoff : "(payoff" role_type float ")"
+math_count : "(count" string int ")"
+math_pair : "(pair" role_type landmark_type ")"
+    | "(pair" string string ")"
+    | "(pair" int int ")"
+    | "(pair" int string ")"
+    | "(pair" role_type int ")"
+    | "(pair" string role_type ")"
+    | "(pair" role_type string ")"
+    | "(pair" role_type role_type ")"
+flips : "(flips" int int ")"
+moves_between : "(between" ("before:" int)? range? ("after:" int)? ("if:" boolean)? ("trail:" int)? apply? ")"
+moves_from : "(from" site_type? (sites | int)? ("level:" int)? ("if:" boolean)? ")"
+moves_piece : "(piece" (string | int | "{"? string+ "}"? | int_set) ("state:" int)? ")"
+moves_player : "(player" int ")"
+moves_to : "(to" site_type? (sites | int)? ("level:" int)? rotations? ("if:" boolean)? apply? ")"
+graph : spiral
+    | rotate
+    | tri
+    | recoordinate
+    | tiling
+    | operators_union
+    | wedge
+    | quadhex
+    | shift
+    | square
+    | hex
+    | dual
+    | renumber
+    | "(graph)"
+    | basis
+    | clip
+    | split_crossings
+    | operators_remove
+    | celtic
+    | keep
+    | brick
+    | subdivide
+    | scale
+    | concentric
+    | skew
+    | hole
+    | operators_add
+    | regular
+    | "(graph" "vertices:" float_set_set ("edges:" "{"? int_set+ "}"?)? ")"
+    | make_faces
+    | complete
+    | intersect
+    | layers
+    | trim
+    | merge
+    | repeat
+poly : "(poly" "{"? dim_set+ "}"? ")"
+    | "(poly" float_set_set ")"
+equipment_card : "(card" card_type "rank:" int "value:" int ("trumpRank:" int)? ("trumpValue:" int)? ("biased:" int)? ")"
+equipment_hint : "(hint" int int? ")"
+    | INT_CONSTANT
+    | "(hint" int_set int? ")"
+equipment_values : "(values" site_type range ")"
+direction : directions_union
+    | directions_if
+    | absolute_direction
+    | directions
+    | relative_direction
+    | directions_difference
+absolute_direction : NW
+    | DS
+    | USW
+    | DW
+    | DE
+    | UPWARD
+    | CW
+    | UE
+    | SW
+    | UNW
+    | S
+    | WNW
+    | SUPPORT
+    | ENE
+    | ESE
+    | CCW
+    | ALL
+    | SAMELAYER
+    | UNE
+    | ANGLED
+    | USE
+    | SSW
+    | DNE
+    | OUT
+    | UW
+    | NE
+    | US
+    | N
+    | AXIAL
+    | ORTHOGONAL
+    | NNW
+    | IN
+    | ROTATIONAL
+    | DIAGONAL
+    | E
+    | SE
+    | SSE
+    | DSW
+    | WSW
+    | ADJACENT
+    | BASE
+    | OFFDIAGONAL
+    | D
+    | NNE
+    | U
+    | W
+    | DSE
+    | DNW
+    | DN
+    | DOWNWARD
+    | UN
+compass_direction : SSW
+    | S
+    | NW
+    | WNW
+    | E
+    | SE
+    | SSE
+    | NE
+    | WSW
+    | ESE
+    | ENE
+    | N
+    | W
+    | NNE
+    | NNW
+    | SW
+direction_facing : directions
+    | relative_direction
+    | directions_if
+    | absolute_direction
+relative_direction : RIGHTWARDS
+    | BRRR
+    | FLL
+    | FL
+    | BLLL
+    | FLLL
+    | SAMEDIRECTION
+    | BLL
+    | FRRR
+    | OPPOSITEDIRECTION
+    | BR
+    | BRR
+    | RIGHTWARD
+    | LEFTWARDS
+    | FR
+    | FORWARDS
+    | BL
+    | BACKWARDS
+    | FORWARD
+    | BACKWARD
+    | FRR
+    | LEFTWARD
+stack_direction : FROMTOP
+    | FROMBOTTOM
+card_type : JACK
+    | THREE
+    | QUEEN
+    | ACE
+    | TEN
+    | KING
+    | FOUR
+    | FIVE
+    | EIGHT
+    | JOKER
+    | SIX
+    | SEVEN
+    | NINE
+    | TWO
+dealable_type : DOMINOES
+    | CARDS
+suit_type : SPADES
+    | DIAMONDS
+    | HEARTS
+    | CLUBS
+mode_type : SIMULTANEOUS
+    | SIMULATION
+    | ALTERNATING
+pass_end_type : DRAW
+    | NOEND
+prev_type : MOVERLASTTURN
+    | MOVER
+repetition_type : SITUATIONAL
+    | SITUATIONALINTURN
+    | POSITIONALINTURN
+    | POSITIONAL
+result_type : ABANDON
+    | WIN
+    | LOSS
+    | TIE
+    | CRASH
+    | DRAW
+role_type : TEAM8
+    | TEAM15
+    | TEAM11
+    | FRIEND
+    | TEAM16
+    | TEAM1
+    | TEAM14
+    | MOVER
+    | TEAM12
+    | TEAM13
+    | P14
+    | NEXT
+    | P4
+    | TEAM3
+    | P6
+    | P11
+    | ENEMY
+    | ALL
+    | EACH
+    | ALLY
+    | TEAM10
+    | P13
+    | P12
+    | P16
+    | TEAM6
+    | P5
+    | PREV
+    | P2
+    | P15
+    | PLAYER
+    | NONMOVER
+    | P10
+    | TEAM2
+    | TEAM5
+    | P8
+    | P7
+    | SHARED
+    | P9
+    | P3
+    | NEUTRAL
+    | P1
+    | TEAM4
+    | TEAM9
+    | TEAM7
+    | TEAMMOVER
+when_type : ENDOFTURN
+    | STARTOFTURN
+basis_type : BRICK
+    | CONCENTRIC
+    | MESH
+    | T33336
+    | T31212
+    | DUAL
+    | CIRCLE
+    | QUADHEX
+    | SQUARE
+    | T4612
+    | T488
+    | MORRIS
+    | T3464
+    | CELTIC
+    | T33344
+    | T33434
+    | T333333_33434
+    | TRIANGULAR
+    | NOBASIS
+    | SPIRAL
+    | HEXAGONAL
+    | SQUAREPYRAMIDAL
+    | T3636
+    | HEXAGONALPYRAMIDAL
+hidden_data : COUNT
+    | WHAT
+    | WHO
+    | ROTATION
+    | STATE
+    | VALUE
+landmark_type : LEFTSITE
+    | FIRSTSITE
+    | BOTTOMSITE
+    | CENTRESITE
+    | RIGHTSITE
+    | TOPSITE
+    | LASTSITE
+puzzle_element_type : VERTEX
+    | HINT
+    | CELL
+    | EDGE
+region_type_dynamic : NOTENEMY
+    | NOTEMPTY
+    | OWN
+    | ENEMY
+    | EMPTY
+    | NOTOWN
+region_type_static : ALLSITES
+    | CORNERS
+    | SIDES
+    | TOUCHING
+    | ROWS
+    | SUBGRIDS
+    | HINTREGIONS
+    | LAYERS
+    | REGIONS
+    | ALLDIRECTIONS
+    | DIAGONALS
+    | VERTICES
+    | SIDESNOCORNERS
+    | COLUMNS
+relation_type : DIAGONAL
+    | ADJACENT
+    | OFFDIAGONAL
+    | ORTHOGONAL
+    | ALL
+shape_type : CROSS
+    | DIAMOND
+    | PRISM
+    | WHEEL
+    | CUSTOM
+    | CIRCLE
+    | NOSHAPE
+    | SQUARE
+    | WEDGE
+    | RHOMBUS
+    | REGULAR
+    | HEXAGON
+    | RECTANGLE
+    | TRIANGLE
+    | POLYGON
+    | SPIRAL
+    | QUADRILATERAL
+    | LIMPING
+    | STAR
+site_type : VERTEX
+    | CELL
+    | EDGE
+step_type : L
+    | F
+    | R
+store_type : NONE
+    | OUTER
+    | INNER
+tiling_boardless_type : SQUARE
+    | HEXAGONAL
+    | TRIANGULAR
+string : STRING
+SET : "Set"
+ROTATION : "Rotation"
+STEP : "Step"
+SLIDE : "Slide"
+SHOOT : "Shoot"
+SELECT : "Select"
+SWAP : "Swap"
+PLAYERS : "Players"
+PIECES : "Pieces"
+REMOVE : "Remove"
+TRUMPSUIT : "TrumpSuit"
+NEXTPLAYER : "NextPlayer"
+HOP : "Hop"
+BET : "Bet"
+PROMOTE : "Promote"
+LEAP : "Leap"
+PROPOSE : "Propose"
+VOTE : "Vote"
+PASS : "Pass"
+PLAYCARD : "PlayCard"
+ADD : "Add"
+CLAIM : "Claim"
+DISTANCE : "Distance"
+CAPTURES : "Captures"
+MOVES : "Moves"
+HIDDEN : "Hidden"
+TEAM : "Team"
+PENDING : "Pending"
+VAR : "Var"
+SCORE : "Score"
+VALUE : "Value"
+COUNT : "Count"
+STATE : "State"
+COUNTER : "Counter"
+POT : "Pot"
+ALL : "All"
+CONTROL : "Control"
+DOMINO : "Domino"
+DIE : "Die"
+DIRECTION : "Direction"
+SITE : "Site"
+GROUP : "Group"
+LEVEL : "Level"
+PLAYER : "Player"
+PIECE : "Piece"
+SUPPORTMULTIPLE : "SupportMultiple"
+SUICIDE : "Suicide"
+REPEAT : "Repeat"
+RANDOM : "Random"
+STACK : "Stack"
+REMEMBERVALUE : "RememberValue"
+AMOUNT : "Amount"
+COST : "Cost"
+PHASE : "Phase"
+DECK : "Deck"
+TRIGGERED : "Triggered"
+CROSSING : "Crossing"
+PATTERN : "Pattern"
+REGULARGRAPH : "RegularGraph"
+LINE : "Line"
+LOOP : "Loop"
+PATH : "Path"
+IN : "In"
+RELATED : "Related"
+TARGET : "Target"
+THREATENED : "Threatened"
+WITHIN : "Within"
+BLOCKED : "Blocked"
+CONNECTED : "Connected"
+LASTFROM : "LastFrom"
+LASTTO : "LastTo"
+ANYDIE : "AnyDie"
+EVEN : "Even"
+FLAT : "Flat"
+ODD : "Odd"
+PIPSMATCH : "PipsMatch"
+SIDESMATCH : "SidesMatch"
+VISITED : "Visited"
+ACTIVE : "Active"
+ENEMY : "Enemy"
+FRIEND : "Friend"
+MOVER : "Mover"
+NEXT : "Next"
+PREV : "Prev"
+CYCLE : "Cycle"
+FULL : "Full"
+EMPTY : "Empty"
+OCCUPIED : "Occupied"
+DECIDED : "Decided"
+PROPOSED : "Proposed"
+CATERPILLARTREE : "CaterpillarTree"
+SPANNINGTREE : "SpanningTree"
+TREE : "Tree"
+TREECENTRE : "TreeCentre"
+UNIQUE : "Unique"
+SOLVED : "Solved"
+SUM : "Sum"
+DIFFERENT : "Different"
+MOVE : "Move"
+VALUES : "Values"
+GROUPS : "Groups"
+DICEEQUAL : "DiceEqual"
+DICEUSED : "DiceUsed"
+PASSED : "Passed"
+SITES : "Sites"
+MOVELIMIT : "MoveLimit"
+TURNLIMIT : "TurnLimit"
+ENDSITE : "EndSite"
+FIRSTSITE : "FirstSite"
+LARGEPIECE : "LargePiece"
+ARRAY : "Array"
+TERRITORY : "Territory"
+FROM : "From"
+LEVELFROM : "LevelFrom"
+LEVELTO : "LevelTo"
+TO : "To"
+STEPSONTRACK : "StepsOnTrack"
+STEPS : "Steps"
+LIBERTIES : "Liberties"
+PIPS : "Pips"
+CELLS : "Cells"
+COLUMNS : "Columns"
+EDGES : "Edges"
+LEGALMOVES : "LegalMoves"
+MOVESTHISTURN : "MovesThisTurn"
+PHASES : "Phases"
+ROWS : "Rows"
+TRIALS : "Trials"
+TURNS : "Turns"
+VERTICES : "Vertices"
+ADJACENT : "Adjacent"
+DIAGONAL : "Diagonal"
+NEIGHBOURS : "Neighbours"
+OFF : "Off"
+ORTHOGONAL : "Orthogonal"
+RANK : "Rank"
+SUIT : "Suit"
+TRUMPRANK : "TrumpRank"
+TRUMPVALUE : "TrumpValue"
+BETWEEN : "Between"
+START : "Start"
+INCIDENT : "Incident"
+AROUND : "Around"
+LINEOFSIGHT : "LineOfSight"
+SIDE : "Side"
+TRACK : "Track"
+FARTHEST : "Farthest"
+ANGLED : "Angled"
+AXIAL : "Axial"
+HORIZONTAL : "Horizontal"
+SLASH : "Slash"
+SLOSH : "Slosh"
+VERTICAL : "Vertical"
+CELL : "Cell"
+COLUMN : "Column"
+EDGE : "Edge"
+LAYER : "Layer"
+ROW : "Row"
+HAND : "Hand"
+WINNING : "Winning"
+BOARD : "Board"
+BOTTOM : "Bottom"
+CENTRE : "Centre"
+CONCAVECORNERS : "ConcaveCorners"
+CONVEXCORNERS : "ConvexCorners"
+CORNERS : "Corners"
+HINT : "Hint"
+INNER : "Inner"
+LEFT : "Left"
+LINEOFPLAY : "LineOfPlay"
+MAJOR : "Major"
+MINOR : "Minor"
+OUTER : "Outer"
+PERIMETER : "Perimeter"
+PLAYABLE : "Playable"
+RIGHT : "Right"
+TOCLEAR : "ToClear"
+TOP : "Top"
+HEXAGON : "Hexagon"
+SQUARE : "Square"
+TRIANGLE : "Triangle"
+DIAMOND : "Diamond"
+LIMPING : "Limping"
+NOSHAPE : "NoShape"
+PRISM : "Prism"
+RECTANGLE : "Rectangle"
+STAR : "Star"
+T31212 : "T31212"
+T333333_33434 : "T333333_33434"
+T33336 : "T33336"
+T33344 : "T33344"
+T33434 : "T33434"
+T3464 : "T3464"
+T3636 : "T3636"
+T4612 : "T4612"
+T488 : "T488"
+ALTERNATING : "Alternating"
+CONCENTRIC : "Concentric"
+IMPLIED : "Implied"
+RADIATING : "Radiating"
+SOLID : "Solid"
+SOLIDNOSPLIT : "SolidNoSplit"
+SPIRAL : "Spiral"
+REMEMBERED : "Remembered"
+ALLY : "Ally"
+NONMOVER : "NonMover"
+TEAM1 : "Team1"
+TEAM10 : "Team10"
+TEAM11 : "Team11"
+TEAM12 : "Team12"
+TEAM13 : "Team13"
+TEAM14 : "Team14"
+TEAM15 : "Team15"
+TEAM16 : "Team16"
+TEAM2 : "Team2"
+TEAM3 : "Team3"
+TEAM4 : "Team4"
+TEAM5 : "Team5"
+TEAM6 : "Team6"
+TEAM7 : "Team7"
+TEAM8 : "Team8"
+TEAM9 : "Team9"
+END : "End"
+INFINITY : "Infinity"
+UNDEFINED : "Undefined"
+BASE : "Base"
+CCW : "CCW"
+CW : "CW"
+D : "D"
+DE : "DE"
+DN : "DN"
+DNE : "DNE"
+DNW : "DNW"
+DS : "DS"
+DSE : "DSE"
+DSW : "DSW"
+DW : "DW"
+DOWNWARD : "Downward"
+E : "E"
+ENE : "ENE"
+ESE : "ESE"
+N : "N"
+NE : "NE"
+NNE : "NNE"
+NNW : "NNW"
+NW : "NW"
+OFFDIAGONAL : "OffDiagonal"
+OUT : "Out"
+ROTATIONAL : "Rotational"
+S : "S"
+SE : "SE"
+SSE : "SSE"
+SSW : "SSW"
+SW : "SW"
+SAMELAYER : "SameLayer"
+SUPPORT : "Support"
+U : "U"
+UE : "UE"
+UN : "UN"
+UNE : "UNE"
+UNW : "UNW"
+US : "US"
+USE : "USE"
+USW : "USW"
+UW : "UW"
+UPWARD : "Upward"
+W : "W"
+WNW : "WNW"
+WSW : "WSW"
+BL : "BL"
+BLL : "BLL"
+BLLL : "BLLL"
+BR : "BR"
+BRR : "BRR"
+BRRR : "BRRR"
+BACKWARD : "Backward"
+BACKWARDS : "Backwards"
+FL : "FL"
+FLL : "FLL"
+FLLL : "FLLL"
+FR : "FR"
+FRR : "FRR"
+FRRR : "FRRR"
+FORWARD : "Forward"
+FORWARDS : "Forwards"
+LEFTWARD : "Leftward"
+LEFTWARDS : "Leftwards"
+OPPOSITEDIRECTION : "OppositeDirection"
+RIGHTWARD : "Rightward"
+RIGHTWARDS : "Rightwards"
+SAMEDIRECTION : "SameDirection"
+FROMBOTTOM : "FromBottom"
+FROMTOP : "FromTop"
+ACE : "Ace"
+EIGHT : "Eight"
+FIVE : "Five"
+FOUR : "Four"
+JACK : "Jack"
+JOKER : "Joker"
+KING : "King"
+NINE : "Nine"
+QUEEN : "Queen"
+SEVEN : "Seven"
+SIX : "Six"
+TEN : "Ten"
+THREE : "Three"
+TWO : "Two"
+CARDS : "Cards"
+DOMINOES : "Dominoes"
+CLUBS : "Clubs"
+DIAMONDS : "Diamonds"
+HEARTS : "Hearts"
+SPADES : "Spades"
+SIMULATION : "Simulation"
+SIMULTANEOUS : "Simultaneous"
+DRAW : "Draw"
+NOEND : "NoEnd"
+MOVERLASTTURN : "MoverLastTurn"
+POSITIONAL : "Positional"
+POSITIONALINTURN : "PositionalInTurn"
+SITUATIONAL : "Situational"
+SITUATIONALINTURN : "SituationalInTurn"
+ABANDON : "Abandon"
+CRASH : "Crash"
+LOSS : "Loss"
+TIE : "Tie"
+WIN : "Win"
+EACH : "Each"
+NEUTRAL : "Neutral"
+P1 : "P1"
+P10 : "P10"
+P11 : "P11"
+P12 : "P12"
+P13 : "P13"
+P14 : "P14"
+P15 : "P15"
+P16 : "P16"
+P2 : "P2"
+P3 : "P3"
+P4 : "P4"
+P5 : "P5"
+P6 : "P6"
+P7 : "P7"
+P8 : "P8"
+P9 : "P9"
+SHARED : "Shared"
+TEAMMOVER : "TeamMover"
+ENDOFTURN : "EndOfTurn"
+STARTOFTURN : "StartOfTurn"
+BRICK : "Brick"
+CELTIC : "Celtic"
+CIRCLE : "Circle"
+DUAL : "Dual"
+HEXAGONAL : "Hexagonal"
+HEXAGONALPYRAMIDAL : "HexagonalPyramidal"
+MESH : "Mesh"
+MORRIS : "Morris"
+NOBASIS : "NoBasis"
+QUADHEX : "QuadHex"
+SQUAREPYRAMIDAL : "SquarePyramidal"
+TRIANGULAR : "Triangular"
+WHAT : "What"
+WHO : "Who"
+BOTTOMSITE : "BottomSite"
+CENTRESITE : "CentreSite"
+LASTSITE : "LastSite"
+LEFTSITE : "LeftSite"
+RIGHTSITE : "RightSite"
+TOPSITE : "Topsite"
+VERTEX : "Vertex"
+NOTEMPTY : "NotEmpty"
+NOTENEMY : "NotEnemy"
+NOTOWN : "NotOwn"
+OWN : "Own"
+ALLDIRECTIONS : "AllDirections"
+ALLSITES : "AllSites"
+DIAGONALS : "Diagonals"
+HINTREGIONS : "HintRegions"
+LAYERS : "Layers"
+REGIONS : "Regions"
+SIDES : "Sides"
+SIDESNOCORNERS : "SidesNoCorners"
+SUBGRIDS : "SubGrids"
+TOUCHING : "Touching"
+CROSS : "Cross"
+CUSTOM : "Custom"
+POLYGON : "Polygon"
+QUADRILATERAL : "Quadrilateral"
+REGULAR : "Regular"
+RHOMBUS : "Rhombus"
+WEDGE : "Wedge"
+WHEEL : "Wheel"
+F : "F"
+L : "L"
+R : "R"
+NONE : "None"
+seq : "(seq" "{"? moves+ "}"? ")"
+FLOAT_CONSTANT : /-?\d+(\.\d+)?/ | /-?\.\d+/
+INT_CONSTANT : /-?\d+/
+BOOLEAN_CONSTANT : "True" | "False"
+NUMBER_CONSTANT : FLOAT_CONSTANT | INT_CONSTANT
+float_set_set : "{" float_set+ "}"
+float_set : "{" float+ "}"
+int_set : "{" int+ "}"
+dim_set : "{" dim+ "}"
+step_type_set : "{" step_type+ "}"
+
+STRING: /"([^"\\]|\\.)*"/
+%import common.WS
+%ignore WS

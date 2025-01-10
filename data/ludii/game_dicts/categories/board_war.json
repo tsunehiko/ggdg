@@ -1,0 +1,132 @@
+{
+    "board/war/custodial/Kharebga (7x7).lud": [
+        "board/war/custodial/Kharebga (5x5).lud",
+        "board/war/custodial/El-Mthaltha.lud",
+        "board/war/custodial/Seega.lud"
+    ],
+    "board/war/custodial/Seega.lud": [
+        "board/war/custodial/El-Mthaltha.lud",
+        "board/war/custodial/Kharebga (5x5).lud",
+        "board/war/custodial/Kharebga (7x7).lud"
+    ],
+    "board/war/custodial/Kharebga (5x5).lud": [
+        "board/war/custodial/El-Mthaltha.lud",
+        "board/war/custodial/Seega.lud",
+        "board/war/custodial/Maak Yek.lud"
+    ],
+    "board/war/custodial/El-Mthaltha.lud": [
+        "board/war/custodial/Maak Yek.lud",
+        "board/war/custodial/Kharebga (7x7).lud",
+        "board/war/custodial/Kharebga (5x5).lud"
+    ],
+    "board/war/custodial/Maak Yek.lud": [
+        "board/war/custodial/Kharebga (7x7).lud",
+        "board/war/custodial/Kharebga (5x5).lud",
+        "board/war/custodial/Seega.lud"
+    ],
+    "board/war/leaping/lines/Alquerque.lud": [
+        "board/war/leaping/lines/Ratti-Chitti-Bakri.lud",
+        "board/war/leaping/lines/Bis Gutiya.lud",
+        "board/war/leaping/lines/Bara Guti.lud"
+    ],
+    "board/war/leaping/lines/Lau Kata Kati.lud": [
+        "board/war/leaping/lines/Ethiopian Capture Game.lud",
+        "board/war/leaping/lines/Dam (Singapore).lud",
+        "board/war/leaping/lines/Alquerque.lud"
+    ],
+    "board/war/leaping/lines/Terhuchu (Small).lud": [
+        "board/war/leaping/lines/Kaua Dorki.lud",
+        "board/war/leaping/lines/Lau Kata Kati.lud",
+        "board/war/leaping/lines/Challis Ghutia (Titagarh).lud"
+    ],
+    "board/war/leaping/lines/Bara Guti (Bihar).lud": [
+        "board/war/leaping/lines/Nei-Pat-Kono.lud",
+        "board/war/leaping/lines/Kaua Dorki.lud",
+        "board/war/leaping/lines/Ethiopian Capture Game.lud"
+    ],
+    "board/war/leaping/lines/Ratti-Chitti-Bakri.lud": [
+        "board/war/leaping/lines/Nei-Pat-Kono.lud",
+        "board/war/leaping/lines/Buudal.lud",
+        "board/war/leaping/lines/Alquerque.lud"
+    ],
+    "board/war/leaping/lines/Bara Guti.lud": [
+        "board/war/leaping/lines/Dam (Singapore).lud",
+        "board/war/leaping/lines/Ethiopian Capture Game.lud",
+        "board/war/leaping/lines/Nei-Pat-Kono.lud"
+    ],
+    "board/war/leaping/lines/Bis Gutiya.lud": [
+        "board/war/leaping/lines/Terhuchu (Small).lud",
+        "board/war/leaping/lines/Nei-Pat-Kono.lud",
+        "board/war/leaping/lines/Dam (Singapore).lud"
+    ],
+    "board/war/leaping/lines/Dam (Singapore).lud": [
+        "board/war/leaping/lines/Kaua Dorki.lud",
+        "board/war/leaping/lines/Bis Gutiya.lud",
+        "board/war/leaping/lines/Buudal.lud"
+    ],
+    "board/war/leaping/lines/Buudal.lud": [
+        "board/war/leaping/lines/Kaua Dorki.lud",
+        "board/war/leaping/lines/Terhuchu (Small).lud",
+        "board/war/leaping/lines/Bis Gutiya.lud"
+    ],
+    "board/war/leaping/lines/Ethiopian Capture Game.lud": [
+        "board/war/leaping/lines/Kaua Dorki.lud",
+        "board/war/leaping/lines/Buudal.lud",
+        "board/war/leaping/lines/Dam (Singapore).lud"
+    ],
+    "board/war/leaping/lines/Kaua Dorki.lud": [
+        "board/war/leaping/lines/Bis Gutiya.lud",
+        "board/war/leaping/lines/Lau Kata Kati.lud",
+        "board/war/leaping/lines/Buudal.lud"
+    ],
+    "board/war/leaping/lines/Nei-Pat-Kono.lud": [
+        "board/war/leaping/lines/Dam (Singapore).lud",
+        "board/war/leaping/lines/Ratti-Chitti-Bakri.lud",
+        "board/war/leaping/lines/Alquerque.lud"
+    ],
+    "board/war/leaping/lines/Challis Ghutia (Titagarh).lud": [
+        "board/war/leaping/lines/Buudal.lud",
+        "board/war/leaping/lines/Lau Kata Kati.lud",
+        "board/war/leaping/lines/Ratti-Chitti-Bakri.lud"
+    ],
+    "board/war/leaping/orthogonal/T'oki.lud": [
+        "board/war/leaping/orthogonal/Yote.lud",
+        "board/war/leaping/orthogonal/Xarajlt.lud",
+        "board/war/leaping/orthogonal/Caturvimsatikosthakatmiki Krida.lud"
+    ],
+    "board/war/leaping/orthogonal/Xarajlt.lud": [
+        "board/war/leaping/orthogonal/T'oki.lud",
+        "board/war/leaping/orthogonal/Choko.lud",
+        "board/war/leaping/orthogonal/Yote.lud"
+    ],
+    "board/war/leaping/orthogonal/Leap Frog.lud": [
+        "board/war/leaping/orthogonal/Xarajlt.lud",
+        "board/war/leaping/orthogonal/T'oki.lud",
+        "board/war/leaping/orthogonal/Tre Guti.lud"
+    ],
+    "board/war/leaping/orthogonal/Caturvimsatikosthakatmiki Krida.lud": [
+        "board/war/leaping/orthogonal/Xarajlt.lud",
+        "board/war/leaping/orthogonal/Yote.lud",
+        "board/war/leaping/orthogonal/T'oki.lud"
+    ],
+    "board/war/leaping/orthogonal/Yote.lud": [
+        "board/war/leaping/orthogonal/Natt Klab ash-Shawk.lud",
+        "board/war/leaping/orthogonal/Choko.lud",
+        "board/war/leaping/orthogonal/Caturvimsatikosthakatmiki Krida.lud"
+    ],
+    "board/war/leaping/orthogonal/Tre Guti.lud": [
+        "board/war/leaping/orthogonal/Leap Frog.lud",
+        "board/war/leaping/orthogonal/Natt Klab ash-Shawk.lud",
+        "board/war/leaping/orthogonal/Choko.lud"
+    ],
+    "board/war/leaping/orthogonal/Natt Klab ash-Shawk.lud": [
+        "board/war/leaping/orthogonal/Yote.lud",
+        "board/war/leaping/orthogonal/Tre Guti.lud",
+        "board/war/leaping/orthogonal/T'oki.lud"
+    ],
+    "board/war/leaping/orthogonal/Choko.lud": [
+        "board/war/leaping/orthogonal/T'oki.lud",
+        "board/war/leaping/orthogonal/Yote.lud",
+        "board/war/leaping/orthogonal/Natt Klab ash-Shawk.lud"
+    ]
+}

@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: EvalLudiiGame
+Class-Path: ../libs/Ludii-1.3.13.jar
