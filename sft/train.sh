@@ -3,7 +3,7 @@ MODEL_NAME=$2  # "meta-llama/Meta-Llama-3-8B-Instruct"
 
 accelerate launch --config_file=sft/configs/multi_gpu.yaml \
     sft/train.py \
-    --model_name MODEL_NAME \
+    --model_name $MODEL_NAME \
     --dataset_name sft/data/program.json \
     --output_dir sft/log/${MODEL_NAME}_program \
     --per_device_train_batch_size 1 \
