@@ -30,6 +30,8 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+The experiments used `transformers 4.52.1` and `accelerate 0.34.2`.
+
 2. Build Java resource
 ```bash
 mkdir ludii_java/libs
